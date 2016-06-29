@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "GLVIndexVC.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    GLVIndexVC *viewController = [[GLVIndexVC alloc] init];
+    UINavigationController *controller = [[UINavigationController alloc] initWithRootViewController:viewController];
+    self.window.rootViewController = controller;
+    
     return YES;
 }
 
