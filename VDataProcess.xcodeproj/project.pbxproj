@@ -14,20 +14,6 @@
 		EA22046A1D23734D005E9435 /* GLVMainDealVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2204641D23734D005E9435 /* GLVMainDealVC.xib */; };
 		EA2204981D237369005E9435 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2204701D237369005E9435 /* UIColor+Hex.m */; };
 		EA2204991D237369005E9435 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2204721D237369005E9435 /* UIView+Frame.m */; };
-		EA22049A1D237369005E9435 /* QHNavSliderMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2204751D237369005E9435 /* QHNavSliderMenu.m */; };
-		EA22049B1D237369005E9435 /* AlertViewWithBlockOrSEL.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2204791D237369005E9435 /* AlertViewWithBlockOrSEL.m */; };
-		EA22049C1D237369005E9435 /* NSObject+DataSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = EA22047B1D237369005E9435 /* NSObject+DataSecurity.m */; };
-		EA22049D1D237369005E9435 /* NSString+QHNSStringCtg.m in Sources */ = {isa = PBXBuildFile; fileRef = EA22047D1D237369005E9435 /* NSString+QHNSStringCtg.m */; };
-		EA22049E1D237369005E9435 /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = EA22047E1D237369005E9435 /* NullSafe.m */; };
-		EA22049F1D237369005E9435 /* UIButton+QHButtonCtg.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2204801D237369005E9435 /* UIButton+QHButtonCtg.m */; };
-		EA2204A01D237369005E9435 /* UILabel+QHLabelCtg.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2204821D237369005E9435 /* UILabel+QHLabelCtg.m */; };
-		EA2204A11D237369005E9435 /* UIView+QHUIViewCtg.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2204841D237369005E9435 /* UIView+QHUIViewCtg.m */; };
-		EA2204A21D237369005E9435 /* QHUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2204891D237369005E9435 /* QHUtil.m */; };
-		EA2204A31D237369005E9435 /* QHUtilAss.m in Sources */ = {isa = PBXBuildFile; fileRef = EA22048B1D237369005E9435 /* QHUtilAss.m */; };
-		EA2204A41D237369005E9435 /* ws_leimu_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA22048D1D237369005E9435 /* ws_leimu_gray@2x.png */; };
-		EA2204A51D237369005E9435 /* ws_leimu_gray@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA22048E1D237369005E9435 /* ws_leimu_gray@3x.png */; };
-		EA2204A61D237369005E9435 /* ws_leimu_pink@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA22048F1D237369005E9435 /* ws_leimu_pink@2x.png */; };
-		EA2204A71D237369005E9435 /* ws_leimu_pink@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2204901D237369005E9435 /* ws_leimu_pink@3x.png */; };
 		EA2204A81D237369005E9435 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2204931D237369005E9435 /* MBProgressHUD.m */; };
 		EA2204A91D237369005E9435 /* STAlbumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2204951D237369005E9435 /* STAlbumManager.m */; };
 		EA2204AA1D237369005E9435 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2204971D237369005E9435 /* Toast+UIView.m */; };
@@ -57,6 +43,7 @@
 		FEF263B71D21862C0031C585 /* EAIntroPage.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF263B11D21862C0031C585 /* EAIntroPage.m */; };
 		FEF263B81D21862C0031C585 /* EAIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF263B31D21862C0031C585 /* EAIntroView.m */; };
 		FEF263B91D21862C0031C585 /* MDImageCroper.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF263B61D21862C0031C585 /* MDImageCroper.m */; };
+		FEF263BC1D256C640031C585 /* MenuHrizontal.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF263BB1D256C640031C585 /* MenuHrizontal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,31 +70,6 @@
 		EA2204701D237369005E9435 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		EA2204711D237369005E9435 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		EA2204721D237369005E9435 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
-		EA2204741D237369005E9435 /* QHNavSliderMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHNavSliderMenu.h; sourceTree = "<group>"; };
-		EA2204751D237369005E9435 /* QHNavSliderMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHNavSliderMenu.m; sourceTree = "<group>"; };
-		EA2204781D237369005E9435 /* AlertViewWithBlockOrSEL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewWithBlockOrSEL.h; sourceTree = "<group>"; };
-		EA2204791D237369005E9435 /* AlertViewWithBlockOrSEL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewWithBlockOrSEL.m; sourceTree = "<group>"; };
-		EA22047A1D237369005E9435 /* NSObject+DataSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DataSecurity.h"; sourceTree = "<group>"; };
-		EA22047B1D237369005E9435 /* NSObject+DataSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DataSecurity.m"; sourceTree = "<group>"; };
-		EA22047C1D237369005E9435 /* NSString+QHNSStringCtg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+QHNSStringCtg.h"; sourceTree = "<group>"; };
-		EA22047D1D237369005E9435 /* NSString+QHNSStringCtg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+QHNSStringCtg.m"; sourceTree = "<group>"; };
-		EA22047E1D237369005E9435 /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
-		EA22047F1D237369005E9435 /* UIButton+QHButtonCtg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+QHButtonCtg.h"; sourceTree = "<group>"; };
-		EA2204801D237369005E9435 /* UIButton+QHButtonCtg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+QHButtonCtg.m"; sourceTree = "<group>"; };
-		EA2204811D237369005E9435 /* UILabel+QHLabelCtg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+QHLabelCtg.h"; sourceTree = "<group>"; };
-		EA2204821D237369005E9435 /* UILabel+QHLabelCtg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+QHLabelCtg.m"; sourceTree = "<group>"; };
-		EA2204831D237369005E9435 /* UIView+QHUIViewCtg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+QHUIViewCtg.h"; sourceTree = "<group>"; };
-		EA2204841D237369005E9435 /* UIView+QHUIViewCtg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+QHUIViewCtg.m"; sourceTree = "<group>"; };
-		EA2204851D237369005E9435 /* macrodefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macrodefine.h; sourceTree = "<group>"; };
-		EA2204861D237369005E9435 /* QHHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHHead.h; sourceTree = "<group>"; };
-		EA2204881D237369005E9435 /* QHUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHUtil.h; sourceTree = "<group>"; };
-		EA2204891D237369005E9435 /* QHUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHUtil.m; sourceTree = "<group>"; };
-		EA22048A1D237369005E9435 /* QHUtilAss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHUtilAss.h; sourceTree = "<group>"; };
-		EA22048B1D237369005E9435 /* QHUtilAss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHUtilAss.m; sourceTree = "<group>"; };
-		EA22048D1D237369005E9435 /* ws_leimu_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ws_leimu_gray@2x.png"; sourceTree = "<group>"; };
-		EA22048E1D237369005E9435 /* ws_leimu_gray@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ws_leimu_gray@3x.png"; sourceTree = "<group>"; };
-		EA22048F1D237369005E9435 /* ws_leimu_pink@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ws_leimu_pink@2x.png"; sourceTree = "<group>"; };
-		EA2204901D237369005E9435 /* ws_leimu_pink@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ws_leimu_pink@3x.png"; sourceTree = "<group>"; };
 		EA2204921D237369005E9435 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		EA2204931D237369005E9435 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		EA2204941D237369005E9435 /* STAlbumManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAlbumManager.h; sourceTree = "<group>"; };
@@ -150,6 +112,8 @@
 		FEF263B31D21862C0031C585 /* EAIntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAIntroView.m; sourceTree = "<group>"; };
 		FEF263B51D21862C0031C585 /* MDImageCroper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDImageCroper.h; sourceTree = "<group>"; };
 		FEF263B61D21862C0031C585 /* MDImageCroper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDImageCroper.m; sourceTree = "<group>"; };
+		FEF263BA1D256C640031C585 /* MenuHrizontal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuHrizontal.h; sourceTree = "<group>"; };
+		FEF263BB1D256C640031C585 /* MenuHrizontal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuHrizontal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,73 +184,11 @@
 			path = UIColor;
 			sourceTree = "<group>";
 		};
-		EA2204731D237369005E9435 /* QHNavSliderMenuView */ = {
-			isa = PBXGroup;
-			children = (
-				EA2204741D237369005E9435 /* QHNavSliderMenu.h */,
-				EA2204751D237369005E9435 /* QHNavSliderMenu.m */,
-				EA2204761D237369005E9435 /* QHUtil */,
-				EA22048C1D237369005E9435 /* resource */,
-			);
-			path = QHNavSliderMenuView;
-			sourceTree = "<group>";
-		};
-		EA2204761D237369005E9435 /* QHUtil */ = {
-			isa = PBXGroup;
-			children = (
-				EA2204771D237369005E9435 /* Categorys */,
-				EA2204851D237369005E9435 /* macrodefine.h */,
-				EA2204861D237369005E9435 /* QHHead.h */,
-				EA2204871D237369005E9435 /* Util */,
-			);
-			path = QHUtil;
-			sourceTree = "<group>";
-		};
-		EA2204771D237369005E9435 /* Categorys */ = {
-			isa = PBXGroup;
-			children = (
-				EA2204781D237369005E9435 /* AlertViewWithBlockOrSEL.h */,
-				EA2204791D237369005E9435 /* AlertViewWithBlockOrSEL.m */,
-				EA22047A1D237369005E9435 /* NSObject+DataSecurity.h */,
-				EA22047B1D237369005E9435 /* NSObject+DataSecurity.m */,
-				EA22047C1D237369005E9435 /* NSString+QHNSStringCtg.h */,
-				EA22047D1D237369005E9435 /* NSString+QHNSStringCtg.m */,
-				EA22047E1D237369005E9435 /* NullSafe.m */,
-				EA22047F1D237369005E9435 /* UIButton+QHButtonCtg.h */,
-				EA2204801D237369005E9435 /* UIButton+QHButtonCtg.m */,
-				EA2204811D237369005E9435 /* UILabel+QHLabelCtg.h */,
-				EA2204821D237369005E9435 /* UILabel+QHLabelCtg.m */,
-				EA2204831D237369005E9435 /* UIView+QHUIViewCtg.h */,
-				EA2204841D237369005E9435 /* UIView+QHUIViewCtg.m */,
-			);
-			path = Categorys;
-			sourceTree = "<group>";
-		};
-		EA2204871D237369005E9435 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				EA2204881D237369005E9435 /* QHUtil.h */,
-				EA2204891D237369005E9435 /* QHUtil.m */,
-				EA22048A1D237369005E9435 /* QHUtilAss.h */,
-				EA22048B1D237369005E9435 /* QHUtilAss.m */,
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
-		EA22048C1D237369005E9435 /* resource */ = {
-			isa = PBXGroup;
-			children = (
-				EA22048D1D237369005E9435 /* ws_leimu_gray@2x.png */,
-				EA22048E1D237369005E9435 /* ws_leimu_gray@3x.png */,
-				EA22048F1D237369005E9435 /* ws_leimu_pink@2x.png */,
-				EA2204901D237369005E9435 /* ws_leimu_pink@3x.png */,
-			);
-			path = resource;
-			sourceTree = "<group>";
-		};
 		EA2204911D237369005E9435 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				FEF263BA1D256C640031C585 /* MenuHrizontal.h */,
+				FEF263BB1D256C640031C585 /* MenuHrizontal.m */,
 				EA2204921D237369005E9435 /* MBProgressHUD.h */,
 				EA2204931D237369005E9435 /* MBProgressHUD.m */,
 				EA2204941D237369005E9435 /* STAlbumManager.h */,
@@ -411,7 +313,6 @@
 			isa = PBXGroup;
 			children = (
 				EA22046D1D237369005E9435 /* Catergory */,
-				EA2204731D237369005E9435 /* QHNavSliderMenuView */,
 				EA2204911D237369005E9435 /* Utils */,
 				FEF263AF1D21862C0031C585 /* EAIntroView */,
 				FEF263B41D21862C0031C585 /* MDImageCroper */,
@@ -529,15 +430,11 @@
 				FEF263941D2183CC0031C585 /* Assets.xcassets in Resources */,
 				EA2204CF1D23787A005E9435 /* skipButton@2x.png in Resources */,
 				EA2204CB1D23787A005E9435 /* icon2@2x.png in Resources */,
-				EA2204A71D237369005E9435 /* ws_leimu_pink@3x.png in Resources */,
 				FEF263921D2183CC0031C585 /* Main.storyboard in Resources */,
-				EA2204A51D237369005E9435 /* ws_leimu_gray@3x.png in Resources */,
 				EA2204C71D23787A005E9435 /* bg3@2x.png in Resources */,
-				EA2204A41D237369005E9435 /* ws_leimu_gray@2x.png in Resources */,
 				EA2204671D23734D005E9435 /* GLVGrayVC.xib in Resources */,
 				EA2204D01D23787A005E9435 /* title1@2x.png in Resources */,
 				EA2204D21D23787A005E9435 /* title3@2x.png in Resources */,
-				EA2204A61D237369005E9435 /* ws_leimu_pink@2x.png in Resources */,
 				EA2204C81D23787A005E9435 /* bg4@2x.png in Resources */,
 				EA2204D11D23787A005E9435 /* title2@2x.png in Resources */,
 				EA2204C91D23787A005E9435 /* bigLogo@2x.png in Resources */,
@@ -566,27 +463,18 @@
 				EA2204661D23734D005E9435 /* GLVGrayVC.m in Sources */,
 				EA2204981D237369005E9435 /* UIColor+Hex.m in Sources */,
 				EA2204681D23734D005E9435 /* GLVIndexVC.m in Sources */,
-				EA22049C1D237369005E9435 /* NSObject+DataSecurity.m in Sources */,
 				FEF2638F1D2183CC0031C585 /* ViewController.m in Sources */,
 				FEF2638C1D2183CC0031C585 /* AppDelegate.m in Sources */,
-				EA22049F1D237369005E9435 /* UIButton+QHButtonCtg.m in Sources */,
 				EA2204A91D237369005E9435 /* STAlbumManager.m in Sources */,
-				EA2204A01D237369005E9435 /* UILabel+QHLabelCtg.m in Sources */,
-				EA2204A11D237369005E9435 /* UIView+QHUIViewCtg.m in Sources */,
-				EA22049B1D237369005E9435 /* AlertViewWithBlockOrSEL.m in Sources */,
-				EA2204A21D237369005E9435 /* QHUtil.m in Sources */,
 				FEF263891D2183CC0031C585 /* main.m in Sources */,
-				EA22049A1D237369005E9435 /* QHNavSliderMenu.m in Sources */,
 				FEF263B91D21862C0031C585 /* MDImageCroper.m in Sources */,
-				EA22049D1D237369005E9435 /* NSString+QHNSStringCtg.m in Sources */,
 				EA2204A81D237369005E9435 /* MBProgressHUD.m in Sources */,
+				FEF263BC1D256C640031C585 /* MenuHrizontal.m in Sources */,
 				FEF263B71D21862C0031C585 /* EAIntroPage.m in Sources */,
 				EA2204B21D237458005E9435 /* EARestrictedScrollView.m in Sources */,
-				EA2204A31D237369005E9435 /* QHUtilAss.m in Sources */,
 				EA2204691D23734D005E9435 /* GLVMainDealVC.m in Sources */,
 				FEF263B81D21862C0031C585 /* EAIntroView.m in Sources */,
 				EA2204991D237369005E9435 /* UIView+Frame.m in Sources */,
-				EA22049E1D237369005E9435 /* NullSafe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
