@@ -44,6 +44,8 @@
 		FEF263B81D21862C0031C585 /* EAIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF263B31D21862C0031C585 /* EAIntroView.m */; };
 		FEF263B91D21862C0031C585 /* MDImageCroper.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF263B61D21862C0031C585 /* MDImageCroper.m */; };
 		FEF263BC1D256C640031C585 /* MenuHrizontal.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF263BB1D256C640031C585 /* MenuHrizontal.m */; };
+		FEF263C21D2BFEE40031C585 /* IGLDropDownItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF263BF1D2BFEE40031C585 /* IGLDropDownItem.m */; };
+		FEF263C31D2BFEE40031C585 /* IGLDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF263C11D2BFEE40031C585 /* IGLDropDownMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,10 @@
 		FEF263B61D21862C0031C585 /* MDImageCroper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDImageCroper.m; sourceTree = "<group>"; };
 		FEF263BA1D256C640031C585 /* MenuHrizontal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuHrizontal.h; sourceTree = "<group>"; };
 		FEF263BB1D256C640031C585 /* MenuHrizontal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuHrizontal.m; sourceTree = "<group>"; };
+		FEF263BE1D2BFEE40031C585 /* IGLDropDownItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGLDropDownItem.h; sourceTree = "<group>"; };
+		FEF263BF1D2BFEE40031C585 /* IGLDropDownItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGLDropDownItem.m; sourceTree = "<group>"; };
+		FEF263C01D2BFEE40031C585 /* IGLDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGLDropDownMenu.h; sourceTree = "<group>"; };
+		FEF263C11D2BFEE40031C585 /* IGLDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGLDropDownMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,6 +318,7 @@
 		FEF263AD1D2183F60031C585 /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
+				FEF263BD1D2BFEE40031C585 /* IGLDropDownMenu */,
 				EA22046D1D237369005E9435 /* Catergory */,
 				EA2204911D237369005E9435 /* Utils */,
 				FEF263AF1D21862C0031C585 /* EAIntroView */,
@@ -339,6 +346,17 @@
 				FEF263B61D21862C0031C585 /* MDImageCroper.m */,
 			);
 			path = MDImageCroper;
+			sourceTree = "<group>";
+		};
+		FEF263BD1D2BFEE40031C585 /* IGLDropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				FEF263BE1D2BFEE40031C585 /* IGLDropDownItem.h */,
+				FEF263BF1D2BFEE40031C585 /* IGLDropDownItem.m */,
+				FEF263C01D2BFEE40031C585 /* IGLDropDownMenu.h */,
+				FEF263C11D2BFEE40031C585 /* IGLDropDownMenu.m */,
+			);
+			path = IGLDropDownMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,9 +483,11 @@
 				EA2204681D23734D005E9435 /* GLVIndexVC.m in Sources */,
 				FEF2638F1D2183CC0031C585 /* ViewController.m in Sources */,
 				FEF2638C1D2183CC0031C585 /* AppDelegate.m in Sources */,
+				FEF263C31D2BFEE40031C585 /* IGLDropDownMenu.m in Sources */,
 				EA2204A91D237369005E9435 /* STAlbumManager.m in Sources */,
 				FEF263891D2183CC0031C585 /* main.m in Sources */,
 				FEF263B91D21862C0031C585 /* MDImageCroper.m in Sources */,
+				FEF263C21D2BFEE40031C585 /* IGLDropDownItem.m in Sources */,
 				EA2204A81D237369005E9435 /* MBProgressHUD.m in Sources */,
 				FEF263BC1D256C640031C585 /* MenuHrizontal.m in Sources */,
 				FEF263B71D21862C0031C585 /* EAIntroPage.m in Sources */,
@@ -602,6 +622,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = VDataProcess/Info.plist;
@@ -616,6 +637,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = VDataProcess/Info.plist;

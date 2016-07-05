@@ -70,9 +70,9 @@
     _titleViewY = 20.f;
     _pageControlY = 50.f;
     _skipButtonY = EA_EMPTY_PROPERTY;
-    _skipButtonSideMargin = 10.f;
+    _skipButtonSideMargin = 35.f;
     _skipButtonAlignment = EAViewAlignmentRight;
-	_skipped = NO;
+    _skipped = NO;
     _limitPageIndex = -1;
     
     [self buildBackgroundImage];
@@ -177,7 +177,7 @@
 }
 
 - (void)skipIntroduction {
-	self.skipped = YES;
+    self.skipped = YES;
     [self hideWithFadeOutDuration:0.3];
 }
 
@@ -346,7 +346,7 @@
     if(page.alpha < 1.f || !page.bgImage) {
         self.backgroundColor = [UIColor clearColor];
     }
-
+    
     if(page.customView) {
         [pageView addSubview:page.customView];
         
@@ -363,7 +363,7 @@
     tapToNextButton.frame = pageView.bounds;
     tapToNextButton.translatesAutoresizingMaskIntoConstraints = NO;
     [tapToNextButton addTarget:self action:@selector(goToNext:) forControlEvents:UIControlEventTouchUpInside];
-
+    
     NSString *accessibilityLabel = [self accessibilityLabelForPage:page];
     if (accessibilityLabel.length > 0) {
         tapToNextButton.isAccessibilityElement = YES;
@@ -964,17 +964,17 @@ CGFloat easeOutValue(CGFloat value) {
         NSLog(@"Wrong initialPageIndex received: %ld",(long)initialPageIndex);
         return;
     }
-
-	self.skipped = NO;
+    
+    self.skipped = NO;
     self.currentPageIndex = initialPageIndex;
     self.alpha = 0;
-
+    
     if(self.superview != view) {
         [view addSubview:self];
     } else {
         [view bringSubviewToFront:self];
     }
-   
+    
     [UIView animateWithDuration:duration animations:^{
         self.alpha = 1;
     } completion:^(BOOL finished) {
@@ -991,8 +991,8 @@ CGFloat easeOutValue(CGFloat value) {
     [UIView animateWithDuration:duration animations:^{
         self.alpha = 0;
     } completion:^(BOOL finished){
-		[self finishIntroductionAndRemoveSelf];
-	}];
+        [self finishIntroductionAndRemoveSelf];
+    }];
 }
 
 - (void)setCurrentPageIndex:(NSUInteger)currentPageIndex {

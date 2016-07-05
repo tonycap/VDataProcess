@@ -3,8 +3,7 @@
 //
 //  Copyright (c) 2013-2015 Evgeny Aleksandrov. License: MIT.
 
-#import <UIKit/UIKit.h>
-
+#import "UIKit/UIKit.h"
 #import "EARestrictedScrollView.h"
 #import "EAIntroPage.h"
 
