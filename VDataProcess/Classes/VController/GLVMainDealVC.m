@@ -8,11 +8,11 @@
 
 #import "GLVMainDealVC.h"
 #import "Macro.h"
-#import "MenuHrizontal.h"
+#import "IGLDropDownMenu.h"
 
-@interface GLVMainDealVC ()<MenuHrizontalDelegate>
+@interface GLVMainDealVC ()<IGLDropDownMenuDelegate>
 
-@property (nonatomic, strong) MenuHrizontal *menuView;
+@property (nonatomic, strong) IGLDropDownMenu *dropDownMenu;
 
 @property (weak, nonatomic) IBOutlet UIButton *backBtn;
 @property (weak, nonatomic) IBOutlet UIButton *saveBtn;
@@ -43,58 +43,50 @@
 
 
 - (void)menuInfoInit{
-    const int menuWidth = 100;
-    NSArray *menuValue = @[@{@"title" : @"灰度化", @"image" : @""},
-                           @{@"title" : @"二值化", @"image" : @""},
-                           @{@"title" : @"形态学", @"image" : @""},
-                           @{@"title" : @"滤波", @"image" : @""},
-                           @{@"title" : @"骨架", @"image" : @""}];
+//    const int menuWidth = 100;
+    NSArray *menuValue = @[@{@"title" : @"灰度化", @"image" : @"icon_cat_8"},
+                           @{@"title" : @"二值化", @"image" : @"icon_cat_10"},
+                           @{@"title" : @"形态学", @"image" : @"icon_cat_16"},
+                           @{@"title" : @"滤波", @"image" : @"icon_cat_3"},
+                           @{@"title" : @"骨架", @"image" : @"icon_cat_17"}];
     
-    NSMutableArray *menuArr = [NSMutableArray new];
-    for (int i = 0; i < menuValue.count; i++) {
-        NSDictionary *menuDic = menuValue[i];
-        
-        NSDictionary *item = @{NOMALKEY : @"normal",
-                               HEIGHTKEY : @"helight",
-                               TITLEKEY : [menuDic objectForKey:@"title"],
-                               TITLEWIDTH : @(menuWidth)};
-        [menuArr addObject:item];
-    }
-    
-    self.menuView = [[MenuHrizontal alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, CGRectGetHeight(self.bottomView.bounds)) ButtonItems:menuArr];
-    self.menuView.delegate = self;
-    [self.bottomView addSubview:self.menuView];
-    self.bottomView.backgroundColor = [UIColor orangeColor];
-    [self.menuView clickButtonAtIndex:0];
+    self.dropDownMenu = [[IGLDropDownMenu alloc] init];
+    self.dropDownMenu.menuText = @"Image effect";
+    self.dropDownMenu.dropDownItems = menuValue;
+    self.dropDownMenu.paddingLeft = 15;
+    [self.dropDownMenu setFrame:CGRectMake(padding30, ScreenHeight - padding30 - 30, 200, 30)];
+    self.dropDownMenu.delegate = self;
+    self.dropDownMenu.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:self.dropDownMenu];
+//    [self.dropDownMenu reloadView];
 }
 
-#pragma mark -- 
-- (void)didMenuHrizontalClickedButtonAtIndex:(NSInteger)aIndex{
-    switch (aIndex) {
+- (void)dropDownMenu:(IGLDropDownMenu*)dropDownMenu selectedItemAtIndex:(NSInteger)index{
+    switch (index) {
         case 0:
-            {
-                
-            }
+        {
+            
+        }
             break;
         case 1:
-            {
+        {
             
-            }
+        }
             break;
         case 2:
-            {
+        {
             
-            }
+        }
             break;
         case 3:
-            {
+        {
             
-            }
+        }
             break;
         case 4:
-            {
+        {
             
-            }
+        }
             break;
         default:
             break;
