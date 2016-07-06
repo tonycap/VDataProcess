@@ -33,6 +33,8 @@
 		EA2204D11D23787A005E9435 /* title2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2204C21D23787A005E9435 /* title2@2x.png */; };
 		EA2204D21D23787A005E9435 /* title3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2204C31D23787A005E9435 /* title3@2x.png */; };
 		EA2204D31D23787A005E9435 /* title4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2204C41D23787A005E9435 /* title4@2x.png */; };
+		FE4305F81D2D58360008529E /* ASValuePopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4305F51D2D58360008529E /* ASValuePopUpView.m */; };
+		FE4305F91D2D58360008529E /* ASValueTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4305F71D2D58360008529E /* ASValueTrackingSlider.m */; };
 		FEF263891D2183CC0031C585 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF263881D2183CC0031C585 /* main.m */; };
 		FEF2638C1D2183CC0031C585 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2638B1D2183CC0031C585 /* AppDelegate.m */; };
 		FEF2638F1D2183CC0031C585 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2638E1D2183CC0031C585 /* ViewController.m */; };
@@ -46,6 +48,9 @@
 		FEF263BC1D256C640031C585 /* MenuHrizontal.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF263BB1D256C640031C585 /* MenuHrizontal.m */; };
 		FEF263C21D2BFEE40031C585 /* IGLDropDownItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF263BF1D2BFEE40031C585 /* IGLDropDownItem.m */; };
 		FEF263C31D2BFEE40031C585 /* IGLDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF263C11D2BFEE40031C585 /* IGLDropDownMenu.m */; };
+		FEF263CD1D2D2FEA0031C585 /* GLMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF263CC1D2D2FEA0031C585 /* GLMenuItem.m */; };
+		FEF263D01D2D31BF0031C585 /* HUMSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF263CF1D2D31BF0031C585 /* HUMSlider.m */; };
+		FEF263D31D2D328F0031C585 /* GLMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF263D21D2D328F0031C585 /* GLMenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +100,10 @@
 		EA2204C21D23787A005E9435 /* title2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title2@2x.png"; sourceTree = "<group>"; };
 		EA2204C31D23787A005E9435 /* title3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title3@2x.png"; sourceTree = "<group>"; };
 		EA2204C41D23787A005E9435 /* title4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title4@2x.png"; sourceTree = "<group>"; };
+		FE4305F41D2D58360008529E /* ASValuePopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValuePopUpView.h; sourceTree = "<group>"; };
+		FE4305F51D2D58360008529E /* ASValuePopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValuePopUpView.m; sourceTree = "<group>"; };
+		FE4305F61D2D58360008529E /* ASValueTrackingSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValueTrackingSlider.h; sourceTree = "<group>"; };
+		FE4305F71D2D58360008529E /* ASValueTrackingSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValueTrackingSlider.m; sourceTree = "<group>"; };
 		FEF263841D2183CC0031C585 /* VDataProcess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VDataProcess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF263881D2183CC0031C585 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FEF2638A1D2183CC0031C585 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -120,6 +129,12 @@
 		FEF263BF1D2BFEE40031C585 /* IGLDropDownItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGLDropDownItem.m; sourceTree = "<group>"; };
 		FEF263C01D2BFEE40031C585 /* IGLDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGLDropDownMenu.h; sourceTree = "<group>"; };
 		FEF263C11D2BFEE40031C585 /* IGLDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGLDropDownMenu.m; sourceTree = "<group>"; };
+		FEF263CB1D2D2FEA0031C585 /* GLMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMenuItem.h; sourceTree = "<group>"; };
+		FEF263CC1D2D2FEA0031C585 /* GLMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLMenuItem.m; sourceTree = "<group>"; };
+		FEF263CE1D2D31BF0031C585 /* HUMSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUMSlider.h; sourceTree = "<group>"; };
+		FEF263CF1D2D31BF0031C585 /* HUMSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUMSlider.m; sourceTree = "<group>"; };
+		FEF263D11D2D328F0031C585 /* GLMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMenuView.h; sourceTree = "<group>"; };
+		FEF263D21D2D328F0031C585 /* GLMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLMenuView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +158,7 @@
 		EA22045C1D23734C005E9435 /* VController */ = {
 			isa = PBXGroup;
 			children = (
+				FEF263CA1D2D2FEA0031C585 /* Menu */,
 				EA22045D1D23734C005E9435 /* GLVGrayVC.h */,
 				EA22045E1D23734C005E9435 /* GLVGrayVC.m */,
 				EA22045F1D23734C005E9435 /* GLVGrayVC.xib */,
@@ -151,16 +167,8 @@
 				EA2204621D23734D005E9435 /* GLVMainDealVC.h */,
 				EA2204631D23734D005E9435 /* GLVMainDealVC.m */,
 				EA2204641D23734D005E9435 /* GLVMainDealVC.xib */,
-				EA2204651D23734D005E9435 /* Menu */,
 			);
 			path = VController;
-			sourceTree = "<group>";
-		};
-		EA2204651D23734D005E9435 /* Menu */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Menu;
 			sourceTree = "<group>";
 		};
 		EA22046B1D237356005E9435 /* MACRO */ = {
@@ -252,6 +260,17 @@
 			path = Intro;
 			sourceTree = "<group>";
 		};
+		FE4305F31D2D58360008529E /* ASValueTrackingSlider */ = {
+			isa = PBXGroup;
+			children = (
+				FE4305F41D2D58360008529E /* ASValuePopUpView.h */,
+				FE4305F51D2D58360008529E /* ASValuePopUpView.m */,
+				FE4305F61D2D58360008529E /* ASValueTrackingSlider.h */,
+				FE4305F71D2D58360008529E /* ASValueTrackingSlider.m */,
+			);
+			path = ASValueTrackingSlider;
+			sourceTree = "<group>";
+		};
 		FEF2637B1D2183CC0031C585 = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +337,7 @@
 		FEF263AD1D2183F60031C585 /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
+				FE4305F31D2D58360008529E /* ASValueTrackingSlider */,
 				FEF263BD1D2BFEE40031C585 /* IGLDropDownMenu */,
 				EA22046D1D237369005E9435 /* Catergory */,
 				EA2204911D237369005E9435 /* Utils */,
@@ -357,6 +377,19 @@
 				FEF263C11D2BFEE40031C585 /* IGLDropDownMenu.m */,
 			);
 			path = IGLDropDownMenu;
+			sourceTree = "<group>";
+		};
+		FEF263CA1D2D2FEA0031C585 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				FEF263CE1D2D31BF0031C585 /* HUMSlider.h */,
+				FEF263CF1D2D31BF0031C585 /* HUMSlider.m */,
+				FEF263CB1D2D2FEA0031C585 /* GLMenuItem.h */,
+				FEF263CC1D2D2FEA0031C585 /* GLMenuItem.m */,
+				FEF263D11D2D328F0031C585 /* GLMenuView.h */,
+				FEF263D21D2D328F0031C585 /* GLMenuView.m */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -482,19 +515,24 @@
 				EA2204981D237369005E9435 /* UIColor+Hex.m in Sources */,
 				EA2204681D23734D005E9435 /* GLVIndexVC.m in Sources */,
 				FEF2638F1D2183CC0031C585 /* ViewController.m in Sources */,
+				FE4305F81D2D58360008529E /* ASValuePopUpView.m in Sources */,
 				FEF2638C1D2183CC0031C585 /* AppDelegate.m in Sources */,
 				FEF263C31D2BFEE40031C585 /* IGLDropDownMenu.m in Sources */,
 				EA2204A91D237369005E9435 /* STAlbumManager.m in Sources */,
 				FEF263891D2183CC0031C585 /* main.m in Sources */,
+				FE4305F91D2D58360008529E /* ASValueTrackingSlider.m in Sources */,
 				FEF263B91D21862C0031C585 /* MDImageCroper.m in Sources */,
 				FEF263C21D2BFEE40031C585 /* IGLDropDownItem.m in Sources */,
 				EA2204A81D237369005E9435 /* MBProgressHUD.m in Sources */,
+				FEF263D31D2D328F0031C585 /* GLMenuView.m in Sources */,
+				FEF263CD1D2D2FEA0031C585 /* GLMenuItem.m in Sources */,
 				FEF263BC1D256C640031C585 /* MenuHrizontal.m in Sources */,
 				FEF263B71D21862C0031C585 /* EAIntroPage.m in Sources */,
 				EA2204B21D237458005E9435 /* EARestrictedScrollView.m in Sources */,
 				EA2204691D23734D005E9435 /* GLVMainDealVC.m in Sources */,
 				FEF263B81D21862C0031C585 /* EAIntroView.m in Sources */,
 				EA2204991D237369005E9435 /* UIView+Frame.m in Sources */,
+				FEF263D01D2D31BF0031C585 /* HUMSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
