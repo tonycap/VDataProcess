@@ -44,54 +44,122 @@
 
 - (void)menuInfoInit{
 //    const int menuWidth = 100;
-    NSArray *menuValue = @[@{@"title" : @"灰度化", @"image" : @"icon_cat_8"},
+    NSArray *menuValue = @[@{@"title" : @"灰度化", @"image" : @"icon_cat_08"},
                            @{@"title" : @"二值化", @"image" : @"icon_cat_10"},
                            @{@"title" : @"形态学", @"image" : @"icon_cat_16"},
-                           @{@"title" : @"滤波", @"image" : @"icon_cat_3"},
+                           @{@"title" : @"滤波", @"image" : @"icon_cat_03"},
                            @{@"title" : @"骨架", @"image" : @"icon_cat_17"}];
+    
+    NSMutableArray *menuArr = [NSMutableArray new];
+    for (int i = 0; i < menuValue.count; i++) {
+        NSDictionary *menuDic = menuValue[i];
+        IGLDropDownItem *item = [[IGLDropDownItem alloc] init];
+        [item setIconImage:[UIImage imageNamed:menuDic[@"image"]]];
+        [item setText:menuDic[@"title"]];
+        [menuArr addObject:item];
+    }
+
     
     self.dropDownMenu = [[IGLDropDownMenu alloc] init];
     self.dropDownMenu.menuText = @"Image effect";
-    self.dropDownMenu.dropDownItems = menuValue;
+    self.dropDownMenu.dropDownItems = menuArr;
     self.dropDownMenu.paddingLeft = 15;
-    [self.dropDownMenu setFrame:CGRectMake(padding30, ScreenHeight - padding30 - 30, 200, 30)];
+    [self.dropDownMenu setFrame:CGRectMake(padding30, ScreenHeight - padding30 - 30, 150, 30)];
     self.dropDownMenu.delegate = self;
-    self.dropDownMenu.backgroundColor = [UIColor orangeColor];
+    self.dropDownMenu.direction = IGLDropDownMenuDirectionUp;
+    self.dropDownMenu.alphaOnFold = 10;
+    self.dropDownMenu.gutterY = 15;
+    self.dropDownMenu.rotate = IGLDropDownMenuRotateRight;
     [self.view addSubview:self.dropDownMenu];
-//    [self.dropDownMenu reloadView];
+    [self.dropDownMenu reloadView];
 }
 
 - (void)dropDownMenu:(IGLDropDownMenu*)dropDownMenu selectedItemAtIndex:(NSInteger)index{
     switch (index) {
         case 0:
         {
-            
+            [self showGrayMenu];
         }
             break;
         case 1:
         {
-            
+            [self showBinaryMenu];
         }
             break;
         case 2:
         {
-            
+            [self showSmoothingMenu];
         }
             break;
         case 3:
         {
-            
+            [self showEdgeMenu];
         }
             break;
         case 4:
         {
-            
+            [self showSkeletonMenu];
         }
             break;
         default:
             break;
     }
 }
+
+#pragma mark -- 菜单选择
+- (void)showGrayMenu{
+    
+}
+
+- (void)showBinaryMenu{
+    
+}
+
+/**
+ *  形态学菜单
+ */
+- (void)showMorphologyMenu{
+
+}
+
+/**
+ *  边缘检测菜单
+ */
+- (void)showEdgeMenu{
+    
+}
+
+/**
+ *  滤波菜单
+ */
+- (void)showSmoothingMenu{
+
+}
+
+/**
+ *  骨架菜单
+ */
+- (void)showSkeletonMenu{
+
+}
+
+#pragma mark -- 图像处理
+
+/**
+ *  灰度处理图像
+ */
+- (void)grayImageFilter{
+    
+}
+
+/**
+ *  二值图像处理
+ */
+- (void)binaryImageFilter{
+    
+}
+
+
 
 #pragma mark --
 - (IBAction)backBtnClick:(id)sender {
