@@ -12,7 +12,7 @@
 #import "GLMenuItem.h"
 #import "Macro.h"
 
-@interface GLMenuView ()<ASValueTrackingSliderDelegate>{
+@interface GLMenuView ()<ASValueTrackingSliderDelegate, GLMenuItemDelegate>{
     int sliderValue;
 }
 
@@ -20,7 +20,8 @@
 
 @property (nonatomic, strong) UIScrollView *menuScrollView;
 
-@property (nonatomic, assign) int index;
+@property (nonatomic, strong) NSArray *itemArr;
+@property (nonatomic, strong) id selectItem;
 
 @end
 
@@ -64,6 +65,7 @@ const int menuWidth = 100;
         return;
     }
     
+    self.itemArr = arr;
     for (UIView *subView in self.menuScrollView.subviews) {
         [subView removeFromSuperview];
     }
@@ -75,12 +77,31 @@ const int menuWidth = 100;
         UIImage *menuImg = [UIImage imageNamed:(imgName.length > 0 ? imgName : @"icon_menu")];
         GLMenuItem *item = [[GLMenuItem alloc] initWithFrame:CGRectMake(i*menuWidth, 0, menuWidth, CGRectGetHeight(self.menuScrollView.bounds)) withImage:menuImg title:titleStr];
         item.itemInfo = itemDic;
-//        item.delegate = self;
+        item.delegate = self;
         [self.menuScrollView addSubview:item];
     }
     
     self.menuScrollView.contentSize = CGSizeMake(menuWidth * arr.count, CGRectGetHeight(self.menuScrollView.bounds));
     self.menuScrollView.contentOffset = CGPointZero;
+}
+
+#pragma mark -- GLMenuItemDelegate
+- (void)menuItemSelect:(id)itemInfo{
+    for (UIView *view in self.menuScrollView.subviews) {
+        if ([view isKindOfClass:[GLMenuItem class]]) {
+            GLMenuItem *item = (GLMenuItem *)view;
+            if (item.itemInfo == itemInfo) {
+                item.selected = true;
+            }else{
+               item.selected = false;
+            }
+        }
+    }
+    self.selectItem = itemInfo;
+    sliderValue = ((sliderValue != 0) ? sliderValue : 0);
+    
+    [self updateItemInfo:itemInfo sliderValue:sliderValue];
+    
 }
 
 #pragma mark ---
@@ -90,5 +111,16 @@ const int menuWidth = 100;
 
 - (void)sliderDidHidePopUpView:(ASValueTrackingSlider *)slider{
     sliderValue = [@(slider.value) intValue];
+    if (self.selectItem) {
+        [self updateItemInfo:self.selectItem sliderValue:sliderValue];
+    }
 }
+
+#pragma mark -- update Item Info
+- (void)updateItemInfo:(id)itemInfo sliderValue:(NSInteger)value{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(itemInfoChange:sliderValue:)]) {
+        [self.delegate itemInfoChange:itemInfo sliderValue:value];
+    }
+}
+
 @end
