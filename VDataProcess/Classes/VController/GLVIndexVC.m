@@ -11,6 +11,7 @@
 #import "Macro.h"
 #import "EAIntroView.h"
 #import "GLVMainDealVC.h"
+#import "GLArtascopeVC.h"
 
 #define FlagShowIntrodce    @"FlagShowIntrodce"
 //引导界面 + About界面（还没实现）
@@ -100,7 +101,8 @@ static NSString * const sampleDescription4 = @"Choose some pictures you like to 
 }
 
 - (IBAction)pintuBtnClick:(id)sender{
-    
+    GLArtascopeVC *VC = [[GLArtascopeVC alloc] init];
+    [self.navigationController pushViewController:VC animated:TRUE];
 }
 
 - (IBAction)aboutBtnClick:(id)sender{

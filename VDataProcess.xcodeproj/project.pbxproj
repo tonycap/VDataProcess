@@ -33,6 +33,9 @@
 		EA2204D11D23787A005E9435 /* title2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2204C21D23787A005E9435 /* title2@2x.png */; };
 		EA2204D21D23787A005E9435 /* title3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2204C31D23787A005E9435 /* title3@2x.png */; };
 		EA2204D31D23787A005E9435 /* title4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2204C41D23787A005E9435 /* title4@2x.png */; };
+		EA73A97F1D2E4C9300772810 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA73A97E1D2E4C9300772810 /* CoreGraphics.framework */; };
+		EA73A9831D2E4F9100772810 /* GLArtascopeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA73A9811D2E4F9100772810 /* GLArtascopeVC.m */; };
+		EA73A9841D2E4F9100772810 /* GLArtascopeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA73A9821D2E4F9100772810 /* GLArtascopeVC.xib */; };
 		FE4305F81D2D58360008529E /* ASValuePopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4305F51D2D58360008529E /* ASValuePopUpView.m */; };
 		FE4305F91D2D58360008529E /* ASValueTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4305F71D2D58360008529E /* ASValueTrackingSlider.m */; };
 		FEF263891D2183CC0031C585 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF263881D2183CC0031C585 /* main.m */; };
@@ -100,6 +103,10 @@
 		EA2204C21D23787A005E9435 /* title2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title2@2x.png"; sourceTree = "<group>"; };
 		EA2204C31D23787A005E9435 /* title3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title3@2x.png"; sourceTree = "<group>"; };
 		EA2204C41D23787A005E9435 /* title4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title4@2x.png"; sourceTree = "<group>"; };
+		EA73A97E1D2E4C9300772810 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EA73A9801D2E4F9100772810 /* GLArtascopeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLArtascopeVC.h; sourceTree = "<group>"; };
+		EA73A9811D2E4F9100772810 /* GLArtascopeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLArtascopeVC.m; sourceTree = "<group>"; };
+		EA73A9821D2E4F9100772810 /* GLArtascopeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLArtascopeVC.xib; sourceTree = "<group>"; };
 		FE4305F41D2D58360008529E /* ASValuePopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValuePopUpView.h; sourceTree = "<group>"; };
 		FE4305F51D2D58360008529E /* ASValuePopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValuePopUpView.m; sourceTree = "<group>"; };
 		FE4305F61D2D58360008529E /* ASValueTrackingSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValueTrackingSlider.h; sourceTree = "<group>"; };
@@ -142,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA73A97F1D2E4C9300772810 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +175,9 @@
 				EA2204621D23734D005E9435 /* GLVMainDealVC.h */,
 				EA2204631D23734D005E9435 /* GLVMainDealVC.m */,
 				EA2204641D23734D005E9435 /* GLVMainDealVC.xib */,
+				EA73A9801D2E4F9100772810 /* GLArtascopeVC.h */,
+				EA73A9811D2E4F9100772810 /* GLArtascopeVC.m */,
+				EA73A9821D2E4F9100772810 /* GLArtascopeVC.xib */,
 			);
 			path = VController;
 			sourceTree = "<group>";
@@ -225,6 +236,7 @@
 		EA2204B31D23787A005E9435 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				EA73A9851D2E666400772810 /* Framework */,
 				EA2204B41D23787A005E9435 /* Images */,
 			);
 			path = Resource;
@@ -258,6 +270,14 @@
 				EA2204C41D23787A005E9435 /* title4@2x.png */,
 			);
 			path = Intro;
+			sourceTree = "<group>";
+		};
+		EA73A9851D2E666400772810 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				EA73A97E1D2E4C9300772810 /* CoreGraphics.framework */,
+			);
+			path = Framework;
 			sourceTree = "<group>";
 		};
 		FE4305F31D2D58360008529E /* ASValueTrackingSlider */ = {
@@ -478,6 +498,7 @@
 				FEF263971D2183CC0031C585 /* LaunchScreen.storyboard in Resources */,
 				EA22046A1D23734D005E9435 /* GLVMainDealVC.xib in Resources */,
 				EA2204C61D23787A005E9435 /* bg2@2x.png in Resources */,
+				EA73A9841D2E4F9100772810 /* GLArtascopeVC.xib in Resources */,
 				FEF263941D2183CC0031C585 /* Assets.xcassets in Resources */,
 				EA2204CF1D23787A005E9435 /* skipButton@2x.png in Resources */,
 				EA2204CB1D23787A005E9435 /* icon2@2x.png in Resources */,
@@ -521,6 +542,7 @@
 				EA2204A91D237369005E9435 /* STAlbumManager.m in Sources */,
 				FEF263891D2183CC0031C585 /* main.m in Sources */,
 				FE4305F91D2D58360008529E /* ASValueTrackingSlider.m in Sources */,
+				EA73A9831D2E4F9100772810 /* GLArtascopeVC.m in Sources */,
 				FEF263B91D21862C0031C585 /* MDImageCroper.m in Sources */,
 				FEF263C21D2BFEE40031C585 /* IGLDropDownItem.m in Sources */,
 				EA2204A81D237369005E9435 /* MBProgressHUD.m in Sources */,
