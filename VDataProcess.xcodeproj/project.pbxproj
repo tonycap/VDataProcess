@@ -10,7 +10,7 @@
 		EA2204661D23734D005E9435 /* GLVGrayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA22045E1D23734C005E9435 /* GLVGrayVC.m */; };
 		EA2204671D23734D005E9435 /* GLVGrayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA22045F1D23734C005E9435 /* GLVGrayVC.xib */; };
 		EA2204681D23734D005E9435 /* GLVIndexVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2204611D23734D005E9435 /* GLVIndexVC.m */; };
-		EA2204691D23734D005E9435 /* GLVMainDealVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2204631D23734D005E9435 /* GLVMainDealVC.m */; };
+		EA2204691D23734D005E9435 /* GLVMainDealVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA2204631D23734D005E9435 /* GLVMainDealVC.mm */; };
 		EA22046A1D23734D005E9435 /* GLVMainDealVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2204641D23734D005E9435 /* GLVMainDealVC.xib */; };
 		EA2204981D237369005E9435 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2204701D237369005E9435 /* UIColor+Hex.m */; };
 		EA2204991D237369005E9435 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2204721D237369005E9435 /* UIView+Frame.m */; };
@@ -36,6 +36,31 @@
 		EA73A97F1D2E4C9300772810 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA73A97E1D2E4C9300772810 /* CoreGraphics.framework */; };
 		EA73A9831D2E4F9100772810 /* GLArtascopeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA73A9811D2E4F9100772810 /* GLArtascopeVC.m */; };
 		EA73A9841D2E4F9100772810 /* GLArtascopeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA73A9821D2E4F9100772810 /* GLArtascopeVC.xib */; };
+		EA73A9BF1D2F711600772810 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA73A9BE1D2F711600772810 /* CoreVideo.framework */; };
+		EA73A9C11D2F712300772810 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA73A9C01D2F712300772810 /* Accelerate.framework */; };
+		EA73A9C31D2F712C00772810 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA73A9C21D2F712C00772810 /* CoreImage.framework */; };
+		EA73A9C51D2F713900772810 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA73A9C41D2F713900772810 /* QuartzCore.framework */; };
+		EA73A9C71D2F72B100772810 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA73A9C61D2F72B100772810 /* opencv2.framework */; };
+		EA73A9C91D2F732B00772810 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA73A9C81D2F732B00772810 /* AssetsLibrary.framework */; };
+		EA73A9CB1D2F733300772810 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA73A9CA1D2F733300772810 /* AVFoundation.framework */; };
+		EA73A9CD1D2F733D00772810 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA73A9CC1D2F733D00772810 /* CoreMedia.framework */; };
+		EA73A9F31D2F7D5900772810 /* UIImage+MatOperate.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA73A9D31D2F7D5900772810 /* UIImage+MatOperate.mm */; };
+		EA73A9F41D2F7D5900772810 /* UIImage+Morphology.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA73A9D51D2F7D5900772810 /* UIImage+Morphology.mm */; };
+		EA73A9F51D2F7D5900772810 /* UIImage+Skeleton.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA73A9D81D2F7D5900772810 /* UIImage+Skeleton.mm */; };
+		EA73A9F61D2F7D5900772810 /* UIImage+Smoothing.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA73A9DA1D2F7D5900772810 /* UIImage+Smoothing.mm */; };
+		EA73A9F71D2F7D5900772810 /* UIImage+Threshold.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA73A9DC1D2F7D5900772810 /* UIImage+Threshold.mm */; };
+		EA73A9F81D2F7D5900772810 /* GLMatEdgeDetection.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA73A9DF1D2F7D5900772810 /* GLMatEdgeDetection.mm */; };
+		EA73A9F91D2F7D5900772810 /* GLMatSkeleton.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA73A9E11D2F7D5900772810 /* GLMatSkeleton.mm */; };
+		EA73A9FA1D2F7D5900772810 /* GLMatTransform.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA73A9E31D2F7D5900772810 /* GLMatTransform.mm */; };
+		EA73A9FB1D2F7D5900772810 /* GLFaceAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA73A9E61D2F7D5900772810 /* GLFaceAnimator.mm */; };
+		EA73A9FC1D2F7D5900772810 /* GLFaceDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA73A9E81D2F7D5900772810 /* GLFaceDetector.mm */; };
+		EA73A9FD1D2F7D5900772810 /* GLFaceRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA73A9EA1D2F7D5900772810 /* GLFaceRecognizer.mm */; };
+		EA73A9FE1D2F7D5900772810 /* haarcascade_eye_tree_eyeglasses.xml in Resources */ = {isa = PBXBuildFile; fileRef = EA73A9EB1D2F7D5900772810 /* haarcascade_eye_tree_eyeglasses.xml */; };
+		EA73A9FF1D2F7D5900772810 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = EA73A9EC1D2F7D5900772810 /* haarcascade_frontalface_alt.xml */; };
+		EA73AA001D2F7D5900772810 /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = EA73A9ED1D2F7D5900772810 /* haarcascade_frontalface_alt2.xml */; };
+		EA73AA011D2F7D5900772810 /* haarcascade_mcs_eyepair_big.xml in Resources */ = {isa = PBXBuildFile; fileRef = EA73A9EE1D2F7D5900772810 /* haarcascade_mcs_eyepair_big.xml */; };
+		EA73AA021D2F7D5900772810 /* haarcascade_mcs_mouth.xml in Resources */ = {isa = PBXBuildFile; fileRef = EA73A9EF1D2F7D5900772810 /* haarcascade_mcs_mouth.xml */; };
+		EA73AA031D2F7D5900772810 /* UIImage+FaceRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA73A9F11D2F7D5900772810 /* UIImage+FaceRecognizer.mm */; };
 		FE4305F81D2D58360008529E /* ASValuePopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4305F51D2D58360008529E /* ASValuePopUpView.m */; };
 		FE4305F91D2D58360008529E /* ASValueTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4305F71D2D58360008529E /* ASValueTrackingSlider.m */; };
 		FEF263891D2183CC0031C585 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF263881D2183CC0031C585 /* main.m */; };
@@ -73,7 +98,7 @@
 		EA2204601D23734C005E9435 /* GLVIndexVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVIndexVC.h; sourceTree = "<group>"; };
 		EA2204611D23734D005E9435 /* GLVIndexVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVIndexVC.m; sourceTree = "<group>"; };
 		EA2204621D23734D005E9435 /* GLVMainDealVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVMainDealVC.h; sourceTree = "<group>"; };
-		EA2204631D23734D005E9435 /* GLVMainDealVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVMainDealVC.m; sourceTree = "<group>"; };
+		EA2204631D23734D005E9435 /* GLVMainDealVC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLVMainDealVC.mm; sourceTree = "<group>"; };
 		EA2204641D23734D005E9435 /* GLVMainDealVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLVMainDealVC.xib; sourceTree = "<group>"; };
 		EA22046C1D237356005E9435 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 		EA22046F1D237369005E9435 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
@@ -107,6 +132,44 @@
 		EA73A9801D2E4F9100772810 /* GLArtascopeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLArtascopeVC.h; sourceTree = "<group>"; };
 		EA73A9811D2E4F9100772810 /* GLArtascopeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLArtascopeVC.m; sourceTree = "<group>"; };
 		EA73A9821D2E4F9100772810 /* GLArtascopeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLArtascopeVC.xib; sourceTree = "<group>"; };
+		EA73A9BE1D2F711600772810 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		EA73A9C01D2F712300772810 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		EA73A9C21D2F712C00772810 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		EA73A9C41D2F713900772810 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EA73A9C61D2F72B100772810 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		EA73A9C81D2F732B00772810 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		EA73A9CA1D2F733300772810 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EA73A9CC1D2F733D00772810 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		EA73A9D21D2F7D5900772810 /* UIImage+MatOperate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MatOperate.h"; sourceTree = "<group>"; };
+		EA73A9D31D2F7D5900772810 /* UIImage+MatOperate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+MatOperate.mm"; sourceTree = "<group>"; };
+		EA73A9D41D2F7D5900772810 /* UIImage+Morphology.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Morphology.h"; sourceTree = "<group>"; };
+		EA73A9D51D2F7D5900772810 /* UIImage+Morphology.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+Morphology.mm"; sourceTree = "<group>"; };
+		EA73A9D61D2F7D5900772810 /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		EA73A9D71D2F7D5900772810 /* UIImage+Skeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Skeleton.h"; sourceTree = "<group>"; };
+		EA73A9D81D2F7D5900772810 /* UIImage+Skeleton.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+Skeleton.mm"; sourceTree = "<group>"; };
+		EA73A9D91D2F7D5900772810 /* UIImage+Smoothing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Smoothing.h"; sourceTree = "<group>"; };
+		EA73A9DA1D2F7D5900772810 /* UIImage+Smoothing.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+Smoothing.mm"; sourceTree = "<group>"; };
+		EA73A9DB1D2F7D5900772810 /* UIImage+Threshold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Threshold.h"; sourceTree = "<group>"; };
+		EA73A9DC1D2F7D5900772810 /* UIImage+Threshold.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+Threshold.mm"; sourceTree = "<group>"; };
+		EA73A9DE1D2F7D5900772810 /* GLMatEdgeDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMatEdgeDetection.h; sourceTree = "<group>"; };
+		EA73A9DF1D2F7D5900772810 /* GLMatEdgeDetection.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLMatEdgeDetection.mm; sourceTree = "<group>"; };
+		EA73A9E01D2F7D5900772810 /* GLMatSkeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMatSkeleton.h; sourceTree = "<group>"; };
+		EA73A9E11D2F7D5900772810 /* GLMatSkeleton.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLMatSkeleton.mm; sourceTree = "<group>"; };
+		EA73A9E21D2F7D5900772810 /* GLMatTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMatTransform.h; sourceTree = "<group>"; };
+		EA73A9E31D2F7D5900772810 /* GLMatTransform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLMatTransform.mm; sourceTree = "<group>"; };
+		EA73A9E51D2F7D5900772810 /* GLFaceAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFaceAnimator.h; sourceTree = "<group>"; };
+		EA73A9E61D2F7D5900772810 /* GLFaceAnimator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLFaceAnimator.mm; sourceTree = "<group>"; };
+		EA73A9E71D2F7D5900772810 /* GLFaceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFaceDetector.h; sourceTree = "<group>"; };
+		EA73A9E81D2F7D5900772810 /* GLFaceDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLFaceDetector.mm; sourceTree = "<group>"; };
+		EA73A9E91D2F7D5900772810 /* GLFaceRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFaceRecognizer.h; sourceTree = "<group>"; };
+		EA73A9EA1D2F7D5900772810 /* GLFaceRecognizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLFaceRecognizer.mm; sourceTree = "<group>"; };
+		EA73A9EB1D2F7D5900772810 /* haarcascade_eye_tree_eyeglasses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye_tree_eyeglasses.xml; sourceTree = "<group>"; };
+		EA73A9EC1D2F7D5900772810 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
+		EA73A9ED1D2F7D5900772810 /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		EA73A9EE1D2F7D5900772810 /* haarcascade_mcs_eyepair_big.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_mcs_eyepair_big.xml; sourceTree = "<group>"; };
+		EA73A9EF1D2F7D5900772810 /* haarcascade_mcs_mouth.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_mcs_mouth.xml; sourceTree = "<group>"; };
+		EA73A9F01D2F7D5900772810 /* UIImage+FaceRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FaceRecognizer.h"; sourceTree = "<group>"; };
+		EA73A9F11D2F7D5900772810 /* UIImage+FaceRecognizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+FaceRecognizer.mm"; sourceTree = "<group>"; };
 		FE4305F41D2D58360008529E /* ASValuePopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValuePopUpView.h; sourceTree = "<group>"; };
 		FE4305F51D2D58360008529E /* ASValuePopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValuePopUpView.m; sourceTree = "<group>"; };
 		FE4305F61D2D58360008529E /* ASValueTrackingSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValueTrackingSlider.h; sourceTree = "<group>"; };
@@ -149,6 +212,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA73A9CD1D2F733D00772810 /* CoreMedia.framework in Frameworks */,
+				EA73A9CB1D2F733300772810 /* AVFoundation.framework in Frameworks */,
+				EA73A9C91D2F732B00772810 /* AssetsLibrary.framework in Frameworks */,
+				EA73A9C11D2F712300772810 /* Accelerate.framework in Frameworks */,
+				EA73A9C71D2F72B100772810 /* opencv2.framework in Frameworks */,
+				EA73A9C51D2F713900772810 /* QuartzCore.framework in Frameworks */,
+				EA73A9C31D2F712C00772810 /* CoreImage.framework in Frameworks */,
+				EA73A9BF1D2F711600772810 /* CoreVideo.framework in Frameworks */,
 				EA73A97F1D2E4C9300772810 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,7 +244,7 @@
 				EA2204601D23734C005E9435 /* GLVIndexVC.h */,
 				EA2204611D23734D005E9435 /* GLVIndexVC.m */,
 				EA2204621D23734D005E9435 /* GLVMainDealVC.h */,
-				EA2204631D23734D005E9435 /* GLVMainDealVC.m */,
+				EA2204631D23734D005E9435 /* GLVMainDealVC.mm */,
 				EA2204641D23734D005E9435 /* GLVMainDealVC.xib */,
 				EA73A9801D2E4F9100772810 /* GLArtascopeVC.h */,
 				EA73A9811D2E4F9100772810 /* GLArtascopeVC.m */,
@@ -275,9 +346,78 @@
 		EA73A9851D2E666400772810 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				EA73A9CC1D2F733D00772810 /* CoreMedia.framework */,
+				EA73A9CA1D2F733300772810 /* AVFoundation.framework */,
+				EA73A9C81D2F732B00772810 /* AssetsLibrary.framework */,
+				EA73A9C61D2F72B100772810 /* opencv2.framework */,
+				EA73A9C41D2F713900772810 /* QuartzCore.framework */,
+				EA73A9C21D2F712C00772810 /* CoreImage.framework */,
+				EA73A9C01D2F712300772810 /* Accelerate.framework */,
+				EA73A9BE1D2F711600772810 /* CoreVideo.framework */,
 				EA73A97E1D2E4C9300772810 /* CoreGraphics.framework */,
 			);
 			path = Framework;
+			sourceTree = "<group>";
+		};
+		EA73A9CE1D2F7D5900772810 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				EA73A9D11D2F7D5900772810 /* Image */,
+				EA73A9DD1D2F7D5900772810 /* Operate */,
+				EA73A9E41D2F7D5900772810 /* Recognizer */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		EA73A9D11D2F7D5900772810 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				EA73A9D21D2F7D5900772810 /* UIImage+MatOperate.h */,
+				EA73A9D31D2F7D5900772810 /* UIImage+MatOperate.mm */,
+				EA73A9D41D2F7D5900772810 /* UIImage+Morphology.h */,
+				EA73A9D51D2F7D5900772810 /* UIImage+Morphology.mm */,
+				EA73A9D61D2F7D5900772810 /* UIImage+OpenCV.h */,
+				EA73A9D71D2F7D5900772810 /* UIImage+Skeleton.h */,
+				EA73A9D81D2F7D5900772810 /* UIImage+Skeleton.mm */,
+				EA73A9D91D2F7D5900772810 /* UIImage+Smoothing.h */,
+				EA73A9DA1D2F7D5900772810 /* UIImage+Smoothing.mm */,
+				EA73A9DB1D2F7D5900772810 /* UIImage+Threshold.h */,
+				EA73A9DC1D2F7D5900772810 /* UIImage+Threshold.mm */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		EA73A9DD1D2F7D5900772810 /* Operate */ = {
+			isa = PBXGroup;
+			children = (
+				EA73A9DE1D2F7D5900772810 /* GLMatEdgeDetection.h */,
+				EA73A9DF1D2F7D5900772810 /* GLMatEdgeDetection.mm */,
+				EA73A9E01D2F7D5900772810 /* GLMatSkeleton.h */,
+				EA73A9E11D2F7D5900772810 /* GLMatSkeleton.mm */,
+				EA73A9E21D2F7D5900772810 /* GLMatTransform.h */,
+				EA73A9E31D2F7D5900772810 /* GLMatTransform.mm */,
+			);
+			path = Operate;
+			sourceTree = "<group>";
+		};
+		EA73A9E41D2F7D5900772810 /* Recognizer */ = {
+			isa = PBXGroup;
+			children = (
+				EA73A9E51D2F7D5900772810 /* GLFaceAnimator.h */,
+				EA73A9E61D2F7D5900772810 /* GLFaceAnimator.mm */,
+				EA73A9E71D2F7D5900772810 /* GLFaceDetector.h */,
+				EA73A9E81D2F7D5900772810 /* GLFaceDetector.mm */,
+				EA73A9E91D2F7D5900772810 /* GLFaceRecognizer.h */,
+				EA73A9EA1D2F7D5900772810 /* GLFaceRecognizer.mm */,
+				EA73A9EB1D2F7D5900772810 /* haarcascade_eye_tree_eyeglasses.xml */,
+				EA73A9EC1D2F7D5900772810 /* haarcascade_frontalface_alt.xml */,
+				EA73A9ED1D2F7D5900772810 /* haarcascade_frontalface_alt2.xml */,
+				EA73A9EE1D2F7D5900772810 /* haarcascade_mcs_eyepair_big.xml */,
+				EA73A9EF1D2F7D5900772810 /* haarcascade_mcs_mouth.xml */,
+				EA73A9F01D2F7D5900772810 /* UIImage+FaceRecognizer.h */,
+				EA73A9F11D2F7D5900772810 /* UIImage+FaceRecognizer.mm */,
+			);
+			path = Recognizer;
 			sourceTree = "<group>";
 		};
 		FE4305F31D2D58360008529E /* ASValueTrackingSlider */ = {
@@ -347,6 +487,7 @@
 		FEF263AC1D2183F60031C585 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EA73A9CE1D2F7D5900772810 /* extension */,
 				EA22046B1D237356005E9435 /* MACRO */,
 				FEF263AD1D2183F60031C585 /* ThirdLib */,
 				EA22045C1D23734C005E9435 /* VController */,
@@ -502,13 +643,18 @@
 				FEF263941D2183CC0031C585 /* Assets.xcassets in Resources */,
 				EA2204CF1D23787A005E9435 /* skipButton@2x.png in Resources */,
 				EA2204CB1D23787A005E9435 /* icon2@2x.png in Resources */,
+				EA73AA011D2F7D5900772810 /* haarcascade_mcs_eyepair_big.xml in Resources */,
 				FEF263921D2183CC0031C585 /* Main.storyboard in Resources */,
+				EA73A9FF1D2F7D5900772810 /* haarcascade_frontalface_alt.xml in Resources */,
 				EA2204C71D23787A005E9435 /* bg3@2x.png in Resources */,
 				EA2204671D23734D005E9435 /* GLVGrayVC.xib in Resources */,
 				EA2204D01D23787A005E9435 /* title1@2x.png in Resources */,
+				EA73A9FE1D2F7D5900772810 /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
+				EA73AA021D2F7D5900772810 /* haarcascade_mcs_mouth.xml in Resources */,
 				EA2204D21D23787A005E9435 /* title3@2x.png in Resources */,
 				EA2204C81D23787A005E9435 /* bg4@2x.png in Resources */,
 				EA2204D11D23787A005E9435 /* title2@2x.png in Resources */,
+				EA73AA001D2F7D5900772810 /* haarcascade_frontalface_alt2.xml in Resources */,
 				EA2204C91D23787A005E9435 /* bigLogo@2x.png in Resources */,
 				EA2204CA1D23787A005E9435 /* icon1@2x.png in Resources */,
 				EA2204C51D23787A005E9435 /* bg1@2x.png in Resources */,
@@ -532,10 +678,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA2204AA1D237369005E9435 /* Toast+UIView.m in Sources */,
+				EA73A9FD1D2F7D5900772810 /* GLFaceRecognizer.mm in Sources */,
+				EA73A9F71D2F7D5900772810 /* UIImage+Threshold.mm in Sources */,
+				EA73A9F41D2F7D5900772810 /* UIImage+Morphology.mm in Sources */,
 				EA2204661D23734D005E9435 /* GLVGrayVC.m in Sources */,
 				EA2204981D237369005E9435 /* UIColor+Hex.m in Sources */,
 				EA2204681D23734D005E9435 /* GLVIndexVC.m in Sources */,
 				FEF2638F1D2183CC0031C585 /* ViewController.m in Sources */,
+				EA73A9F61D2F7D5900772810 /* UIImage+Smoothing.mm in Sources */,
 				FE4305F81D2D58360008529E /* ASValuePopUpView.m in Sources */,
 				FEF2638C1D2183CC0031C585 /* AppDelegate.m in Sources */,
 				FEF263C31D2BFEE40031C585 /* IGLDropDownMenu.m in Sources */,
@@ -545,13 +695,21 @@
 				EA73A9831D2E4F9100772810 /* GLArtascopeVC.m in Sources */,
 				FEF263B91D21862C0031C585 /* MDImageCroper.m in Sources */,
 				FEF263C21D2BFEE40031C585 /* IGLDropDownItem.m in Sources */,
+				EA73A9FC1D2F7D5900772810 /* GLFaceDetector.mm in Sources */,
 				EA2204A81D237369005E9435 /* MBProgressHUD.m in Sources */,
+				EA73AA031D2F7D5900772810 /* UIImage+FaceRecognizer.mm in Sources */,
+				EA73A9F91D2F7D5900772810 /* GLMatSkeleton.mm in Sources */,
+				EA73A9F51D2F7D5900772810 /* UIImage+Skeleton.mm in Sources */,
+				EA73A9FA1D2F7D5900772810 /* GLMatTransform.mm in Sources */,
 				FEF263D31D2D328F0031C585 /* GLMenuView.m in Sources */,
 				FEF263CD1D2D2FEA0031C585 /* GLMenuItem.m in Sources */,
 				FEF263BC1D256C640031C585 /* MenuHrizontal.m in Sources */,
+				EA73A9F81D2F7D5900772810 /* GLMatEdgeDetection.mm in Sources */,
 				FEF263B71D21862C0031C585 /* EAIntroPage.m in Sources */,
 				EA2204B21D237458005E9435 /* EARestrictedScrollView.m in Sources */,
-				EA2204691D23734D005E9435 /* GLVMainDealVC.m in Sources */,
+				EA73A9F31D2F7D5900772810 /* UIImage+MatOperate.mm in Sources */,
+				EA2204691D23734D005E9435 /* GLVMainDealVC.mm in Sources */,
+				EA73A9FB1D2F7D5900772810 /* GLFaceAnimator.mm in Sources */,
 				FEF263B81D21862C0031C585 /* EAIntroView.m in Sources */,
 				EA2204991D237369005E9435 /* UIView+Frame.m in Sources */,
 				FEF263D01D2D31BF0031C585 /* HUMSlider.m in Sources */,
@@ -685,7 +843,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VDataProcess/Resource/Framework",
+				);
 				INFOPLIST_FILE = VDataProcess/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.noahwm.JSCoreBridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -700,7 +863,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VDataProcess/Resource/Framework",
+				);
 				INFOPLIST_FILE = VDataProcess/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.noahwm.JSCoreBridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";

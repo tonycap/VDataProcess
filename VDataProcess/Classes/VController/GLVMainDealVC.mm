@@ -11,6 +11,8 @@
 #import "IGLDropDownMenu.h"
 #import "GLMenuView.h"
 
+#import "UIImage+OpenCV.h"
+
 @interface GLVMainDealVC ()<IGLDropDownMenuDelegate, GLMenuViewDelegate>
 
 @property (nonatomic, strong) IGLDropDownMenu *dropDownMenu;
@@ -46,7 +48,7 @@
 
 
 - (void)menuInfoInit{
-//    const int menuWidth = 100;
+    //    const int menuWidth = 100;
     NSArray *menuValue = @[@{@"title" : @"灰度化", @"image" : @"icon_cat_08"},
                            @{@"title" : @"二值化", @"image" : @"icon_cat_10"},
                            @{@"title" : @"形态学", @"image" : @"icon_cat_16"},
@@ -61,7 +63,7 @@
         [item setText:menuDic[@"title"]];
         [menuArr addObject:item];
     }
-
+    
     
     self.dropDownMenu = [[IGLDropDownMenu alloc] init];
     self.dropDownMenu.menuText = @"Image effect";
@@ -114,18 +116,18 @@
     NSArray *grayMenu = @[@{@"title" : @"灰度图", @"image" : @"icon_cat_07", @"operateType":@(GrayTypeDeal)},
                           @{@"title" : @"直方图", @"image" : @"icon_cat_08", @"operateType":@(GrayTypeHist)},
                           @{@"title" : @"均衡化", @"image" : @"icon_cat_09", @"operateType":@(GrayTypeEqual)},
-                          @{@"title" : @"直方图均衡化", @"image" : @"icon_cat_10", @"operateType":@(GrayTypeMap)}
+                          @{@"title" : @"直方图均衡化", @"image" : @"icon_cat_10", @"operateType":@(GrayTypeHistEqual)}
                           ];
     [self showMenuViewWithArr:grayMenu];
 }
 
 - (void)showBinaryMenu{
     NSArray *binMenu = @[@{@"title" : @"迭代法", @"image" : @"icon_cat_01", @"operateType":@(BinaryTypeDetech)},
-                        @{@"title" : @"OTSU法", @"image" : @"icon_cat_02", @"operateType":@(BinaryTypeOTSU)},
-                        @{@"title" : @"熵阈值", @"image" : @"icon_cat_03", @"operateType":@(BinaryTypeMaxEntropy)},
-                        @{@"title" : @"全局阈值", @"image" : @"icon_cat_04", @"operateType":@(BinaryTypeGlobal)},
-                        @{@"title" : @"自定义阈值", @"image" : @"icon_cat_05", @"operateType":@(BinaryTypeCustom)}
-                        ];
+                         @{@"title" : @"OTSU法", @"image" : @"icon_cat_02", @"operateType":@(BinaryTypeOTSU)},
+                         @{@"title" : @"熵阈值", @"image" : @"icon_cat_03", @"operateType":@(BinaryTypeMaxEntropy)},
+                         @{@"title" : @"全局阈值", @"image" : @"icon_cat_04", @"operateType":@(BinaryTypeGlobal)},
+                         @{@"title" : @"自定义阈值", @"image" : @"icon_cat_05", @"operateType":@(BinaryTypeCustom)}
+                         ];
     [self showMenuViewWithArr:binMenu];
 }
 
@@ -164,11 +166,11 @@
  */
 - (void)showSmoothingMenu{
     NSArray *smoothingMenu = @[@{@"title" : @"方框滤波", @"image" : @"icon_cat_05", @"operateType":@(SmoothTypeBoxBlur)},
-                          @{@"title" : @"均值滤波", @"image" : @"icon_cat_06", @"operateType":@(SmoothTypeBlur)},
-                          @{@"title" : @"高斯滤波", @"image" : @"icon_cat_07", @"operateType":@(SmoothTypeGussianBlur)},
-                          @{@"title" : @"中值滤波", @"image" : @"icon_cat_08", @"operateType":@(SmoothTypeMedianBlur)},
-                          @{@"title" : @"双边滤波", @"image" : @"icon_cat_09", @"operateType":@(SmoothTypeBilatelBlur)}
-                          ];
+                               @{@"title" : @"均值滤波", @"image" : @"icon_cat_06", @"operateType":@(SmoothTypeBlur)},
+                               @{@"title" : @"高斯滤波", @"image" : @"icon_cat_07", @"operateType":@(SmoothTypeGussianBlur)},
+                               @{@"title" : @"中值滤波", @"image" : @"icon_cat_08", @"operateType":@(SmoothTypeMedianBlur)},
+                               @{@"title" : @"双边滤波", @"image" : @"icon_cat_09", @"operateType":@(SmoothTypeBilatelBlur)}
+                               ];
     [self showMenuViewWithArr:smoothingMenu];
 }
 
@@ -177,10 +179,10 @@
  */
 - (void)showSkeletonMenu{
     NSArray *sketetonMenu = @[@{@"title" : @"距离转换", @"image" : @"icon_cat_10", @"operateType":@(SkeletonTypeDistanceTransform)},
-                          @{@"title" : @"hilditch细化", @"image" : @"icon_cat_11", @"operateType":@(SkeletonTypeHilditch)},
-                          @{@"title" : @"Rosenfeld细化", @"image" : @"icon_cat_12", @"operateType":@(SkeletonTypeRosenfeld)},
-                          @{@"title" : @"形态学骨架", @"image" : @"icon_cat_13", @"operateType":@(SkeletonTypeMorph)}
-                          ];
+                              @{@"title" : @"hilditch细化", @"image" : @"icon_cat_11", @"operateType":@(SkeletonTypeHilditch)},
+                              @{@"title" : @"Rosenfeld细化", @"image" : @"icon_cat_12", @"operateType":@(SkeletonTypeRosenfeld)},
+                              @{@"title" : @"形态学骨架", @"image" : @"icon_cat_13", @"operateType":@(SkeletonTypeMorph)}
+                              ];
     [self showMenuViewWithArr:sketetonMenu];
 }
 
@@ -199,7 +201,7 @@
 - (void)itemInfoChange:(id)itemInfo sliderValue:(NSInteger)value{
     NSString *typeStr = [[itemInfo objectForKey:@"operateType"] stringValue];
     NSLog(@"itemInfo %@, value: %@", itemInfo, @(value));
-          
+    
     if ([typeStr hasPrefix:@"100"]) {
         [self grayWithType:[typeStr integerValue]];
     }else if ([typeStr hasPrefix:@"200"]){
@@ -221,28 +223,23 @@
 - (void)grayWithType:(NSInteger)type{
     switch (type) {
         case GrayTypeDeal:
-            {
-                
-            }
+        {
+            self.imageView.image = [self.srcImg grayImage];
+        }
             break;
         case GrayTypeHist:
         {
-            
+            self.imageView.image = [self.srcImg grayHistImg];
         }
             break;
         case GrayTypeEqual:
         {
-            
+            self.imageView.image = [self.srcImg equalHistImg];
         }
             break;
         case GrayTypeHistEqual:
         {
-            
-        }
-            break;
-        case GrayTypeMap:
-        {
-            
+            self.imageView.image = [self.srcImg histogramEqualization];
         }
             break;
         default:
@@ -256,29 +253,29 @@
 - (void)binaryWithType:(NSInteger)type sliderValue:(NSInteger)value{
     switch (type) {
         case BinaryTypeMaxEntropy:
-            {
-                
-            }
+        {
+            self.imageView.image = [self.srcImg binaryzationWithMaxEntropy];
+        }
             break;
         case BinaryTypeGlobal:
         {
-            
+            self.imageView.image = [self.srcImg binaryzationWithWithGlobalThrehold];
         }
             break;
             
         case BinaryTypeDetech:
         {
-            
+            self.imageView.image = [self.srcImg binaryzationWithWithDetech];
         }
             break;
         case BinaryTypeOTSU:
         {
-            
+            self.imageView.image = [self.srcImg binaryzation];
         }
             break;
         case BinaryTypeCustom:
         {
-            
+            self.imageView.image = [self.srcImg binaryzationWithThresh:(int)value];
         }
             break;
         default:
@@ -287,40 +284,42 @@
 }
 
 - (void)morphologyWithType:(NSInteger)type sliderValue:(NSInteger)value{
+    int size = (value == 0 ? 2 : (int)value);
+    
     switch (type) {
         case MorphologytypeErosion:
-            {
-                
-            }
+        {
+            self.imageView.image = [self.srcImg erosionType:1 size:size];
+        }
             break;
         case MorphologytypeDilate:
         {
-            
+            self.imageView.image = [self.srcImg dilationWithType:1 size:size];
         }
             break;
         case MorphologytypeOpen:
         {
-            
+            self.imageView.image = [self.srcImg morphologyWithOperation:0 elementSize:size];
         }
             break;
         case MorphologytypeClose:
         {
-            
+            self.imageView.image = [self.srcImg morphologyWithOperation:1 elementSize:size];
         }
             break;
         case MorphologytypeGradient:
         {
-            
+            self.imageView.image = [self.srcImg morphologyWithOperation:2 elementSize:size];
         }
             break;
         case MorphologytypeTopHat:
         {
-            
+            self.imageView.image = [self.srcImg morphologyWithOperation:3 elementSize:size];
         }
             break;
         case MorphologytypeBlackHat:
         {
-            
+            self.imageView.image = [self.srcImg morphologyWithOperation:4 elementSize:size];
         }
             break;
             
@@ -330,35 +329,36 @@
 }
 
 - (void)edgeWithType:(NSInteger)type sliderValue:(NSInteger)value{
+    int size = (value == 0 ? 3 : (int)value);
     switch (type) {
         case EdgeTypeSobel:
-            {
-                
-            }
+        {
+            self.imageView.image = [self.srcImg sobelWithScale:size];
+        }
             break;
         case EdgeTypeCanny:
         {
-            
+            self.imageView.image = [self.srcImg cannyWithThreshold:size];
         }
             break;
         case EdgeTypeLaplace:
         {
-            
+            self.imageView.image = [self.srcImg LaplaceWithSize:size];
         }
             break;
         case EdgeTypeScharr:
         {
-            
+            self.imageView.image = [self.srcImg scharrWithScale:size];
         }
             break;
         case EdgeTypeRoberts:
         {
-            
+            self.imageView.image = [self.srcImg robertsEdge];
         }
             break;
         case EdgeTypePrewitt:
         {
-            
+            self.imageView.image = [self.srcImg prewittEdge];
         }
             break;
         default:
@@ -367,30 +367,31 @@
 }
 
 - (void)smoothingType:(NSInteger)type sliderValue:(NSInteger)value{
+    int size = [self value:(int)value defaultValue:3];
     switch (type) {
         case SmoothTypeBoxBlur:
-            {
-            
-            }
+        {
+            self.imageView.image = [self.srcImg boxBlurFilterWithSize:size];
+        }
             break;
         case SmoothTypeBlur:
         {
-            
+            self.imageView.image = [self.srcImg blureFilterWithSize:size];
         }
             break;
         case SmoothTypeGussianBlur:
         {
-            
+            self.imageView.image = [self.srcImg gaussianBlurFilterWithSize:size];
         }
             break;
         case SmoothTypeMedianBlur:
         {
-            
+            self.imageView.image = [self.srcImg medianFilterWithkSize:size];
         }
             break;
         case SmoothTypeBilatelBlur:
         {
-            
+            self.imageView.image = [self.srcImg bilateralFilterWithSie:size];
         }
             break;
         default:
@@ -401,28 +402,34 @@
 - (void)skeletonType:(NSInteger)type sliderValue:(NSInteger)value{
     switch (type) {
         case SkeletonTypeDistanceTransform:
-            {
-                
-            }
+        {
+            self.imageView.image = [self.srcImg distanceTransform];
+        }
             break;
         case SkeletonTypeHilditch:
         {
-            
+            self.imageView.image = [self.srcImg skeletonByHilditch];
         }
             break;
         case SkeletonTypeRosenfeld:
         {
-            
+            self.imageView.image = [self.srcImg skeletonByRosenfeld];
         }
             break;
         case SkeletonTypeMorph:
         {
-            
+            self.imageView.image = [self.srcImg skeletonByMorph];
         }
             break;
         default:
             break;
     }
+}
+
+- (int)value:(int)value defaultValue:(int)defaultValue{
+    int retValue = (value == 0 ? defaultValue : value);
+    
+    return retValue;
 }
 
 #pragma mark --
@@ -433,6 +440,5 @@
 - (IBAction)saveBtnClick:(id)sender {
     
 }
-
 
 @end
