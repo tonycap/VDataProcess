@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "931EFD52ECB7BCBFBC29FE37983C597B20B67BF1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "931EFD52ECB7BCBFBC29FE37983C597B20B67BF1" : 0,
+    "21F39A739340B3CBC26B45BC3379B9A19B627B42" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "89ECAD68-B7E3-4391-B1F1-6F19CFE93D96",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "931EFD52ECB7BCBFBC29FE37983C597B20B67BF1" : "VDataProcess\/",
+    "21F39A739340B3CBC26B45BC3379B9A19B627B42" : "DImageFilter\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "VDataProcess",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "VDataProcess.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tonycap\/DImageFilter.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "21F39A739340B3CBC26B45BC3379B9A19B627B42"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tonycap\/VDataProcess.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "931EFD52ECB7BCBFBC29FE37983C597B20B67BF1"
+    }
+  ]
+}
