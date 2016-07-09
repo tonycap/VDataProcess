@@ -18,9 +18,8 @@
 @interface GLMenuView : UIView
 
 @property (nonatomic, assign) id<GLMenuViewDelegate> delegate;
-@property (nonatomic, assign) BOOL showSlider;
-
 
 - (instancetype)initWithFrame:(CGRect)frame withMenuItem:(NSArray *)menuArr;
 
+- (void)itemSelectAtIndex:(NSInteger)index;
 @end

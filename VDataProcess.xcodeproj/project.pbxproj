@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA2204661D23734D005E9435 /* GLVGrayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA22045E1D23734C005E9435 /* GLVGrayVC.m */; };
-		EA2204671D23734D005E9435 /* GLVGrayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA22045F1D23734C005E9435 /* GLVGrayVC.xib */; };
 		EA2204681D23734D005E9435 /* GLVIndexVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2204611D23734D005E9435 /* GLVIndexVC.m */; };
 		EA2204691D23734D005E9435 /* GLVMainDealVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA2204631D23734D005E9435 /* GLVMainDealVC.mm */; };
 		EA22046A1D23734D005E9435 /* GLVMainDealVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2204641D23734D005E9435 /* GLVMainDealVC.xib */; };
@@ -92,9 +90,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EA22045D1D23734C005E9435 /* GLVGrayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVGrayVC.h; sourceTree = "<group>"; };
-		EA22045E1D23734C005E9435 /* GLVGrayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVGrayVC.m; sourceTree = "<group>"; };
-		EA22045F1D23734C005E9435 /* GLVGrayVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLVGrayVC.xib; sourceTree = "<group>"; };
 		EA2204601D23734C005E9435 /* GLVIndexVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVIndexVC.h; sourceTree = "<group>"; };
 		EA2204611D23734D005E9435 /* GLVIndexVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVIndexVC.m; sourceTree = "<group>"; };
 		EA2204621D23734D005E9435 /* GLVMainDealVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVMainDealVC.h; sourceTree = "<group>"; };
@@ -238,9 +233,6 @@
 			isa = PBXGroup;
 			children = (
 				FEF263CA1D2D2FEA0031C585 /* Menu */,
-				EA22045D1D23734C005E9435 /* GLVGrayVC.h */,
-				EA22045E1D23734C005E9435 /* GLVGrayVC.m */,
-				EA22045F1D23734C005E9435 /* GLVGrayVC.xib */,
 				EA2204601D23734C005E9435 /* GLVIndexVC.h */,
 				EA2204611D23734D005E9435 /* GLVIndexVC.m */,
 				EA2204621D23734D005E9435 /* GLVMainDealVC.h */,
@@ -647,7 +639,6 @@
 				FEF263921D2183CC0031C585 /* Main.storyboard in Resources */,
 				EA73A9FF1D2F7D5900772810 /* haarcascade_frontalface_alt.xml in Resources */,
 				EA2204C71D23787A005E9435 /* bg3@2x.png in Resources */,
-				EA2204671D23734D005E9435 /* GLVGrayVC.xib in Resources */,
 				EA2204D01D23787A005E9435 /* title1@2x.png in Resources */,
 				EA73A9FE1D2F7D5900772810 /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
 				EA73AA021D2F7D5900772810 /* haarcascade_mcs_mouth.xml in Resources */,
@@ -681,7 +672,6 @@
 				EA73A9FD1D2F7D5900772810 /* GLFaceRecognizer.mm in Sources */,
 				EA73A9F71D2F7D5900772810 /* UIImage+Threshold.mm in Sources */,
 				EA73A9F41D2F7D5900772810 /* UIImage+Morphology.mm in Sources */,
-				EA2204661D23734D005E9435 /* GLVGrayVC.m in Sources */,
 				EA2204981D237369005E9435 /* UIColor+Hex.m in Sources */,
 				EA2204681D23734D005E9435 /* GLVIndexVC.m in Sources */,
 				FEF2638F1D2183CC0031C585 /* ViewController.m in Sources */,

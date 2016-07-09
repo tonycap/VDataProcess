@@ -113,19 +113,19 @@
 
 #pragma mark -- 菜单选择
 - (void)showGrayMenu{
-    NSArray *grayMenu = @[@{@"title" : @"灰度图", @"image" : @"icon_cat_07", @"operateType":@(GrayTypeDeal)},
-                          @{@"title" : @"直方图", @"image" : @"icon_cat_08", @"operateType":@(GrayTypeHist)},
-                          @{@"title" : @"均衡化", @"image" : @"icon_cat_09", @"operateType":@(GrayTypeEqual)},
-                          @{@"title" : @"直方图均衡化", @"image" : @"icon_cat_10", @"operateType":@(GrayTypeHistEqual)}
+    NSArray *grayMenu = @[@{@"title" : @"灰度图", @"image" : @"icon_cat_07", @"operateType":@(GrayTypeDeal), @"showSlider" : @"0"},
+                          @{@"title" : @"直方图", @"image" : @"icon_cat_08", @"operateType":@(GrayTypeHist), @"showSlider" : @"0"},
+                          @{@"title" : @"均衡化", @"image" : @"icon_cat_09", @"operateType":@(GrayTypeEqual), @"showSlider" : @"0"},
+                          @{@"title" : @"直方图均衡化", @"image" : @"icon_cat_10", @"operateType":@(GrayTypeHistEqual), @"showSlider" : @"0"}
                           ];
     [self showMenuViewWithArr:grayMenu];
 }
 
 - (void)showBinaryMenu{
-    NSArray *binMenu = @[@{@"title" : @"迭代法", @"image" : @"icon_cat_01", @"operateType":@(BinaryTypeDetech)},
-                         @{@"title" : @"OTSU法", @"image" : @"icon_cat_02", @"operateType":@(BinaryTypeOTSU)},
-                         @{@"title" : @"熵阈值", @"image" : @"icon_cat_03", @"operateType":@(BinaryTypeMaxEntropy)},
-                         @{@"title" : @"全局阈值", @"image" : @"icon_cat_04", @"operateType":@(BinaryTypeGlobal)},
+    NSArray *binMenu = @[@{@"title" : @"迭代法", @"image" : @"icon_cat_01", @"operateType":@(BinaryTypeDetech), @"showSlider" : @"0"},
+                         @{@"title" : @"OTSU法", @"image" : @"icon_cat_02", @"operateType":@(BinaryTypeOTSU), @"showSlider" : @"0"},
+                         @{@"title" : @"熵阈值", @"image" : @"icon_cat_03", @"operateType":@(BinaryTypeMaxEntropy), @"showSlider" : @"0"},
+                         @{@"title" : @"全局阈值", @"image" : @"icon_cat_04", @"operateType":@(BinaryTypeGlobal), @"showSlider" : @"0"},
                          @{@"title" : @"自定义阈值", @"image" : @"icon_cat_05", @"operateType":@(BinaryTypeCustom)}
                          ];
     [self showMenuViewWithArr:binMenu];
@@ -178,10 +178,10 @@
  *  骨架菜单
  */
 - (void)showSkeletonMenu{
-    NSArray *sketetonMenu = @[@{@"title" : @"距离转换", @"image" : @"icon_cat_10", @"operateType":@(SkeletonTypeDistanceTransform)},
-                              @{@"title" : @"hilditch细化", @"image" : @"icon_cat_11", @"operateType":@(SkeletonTypeHilditch)},
-                              @{@"title" : @"Rosenfeld细化", @"image" : @"icon_cat_12", @"operateType":@(SkeletonTypeRosenfeld)},
-                              @{@"title" : @"形态学骨架", @"image" : @"icon_cat_13", @"operateType":@(SkeletonTypeMorph)}
+    NSArray *sketetonMenu = @[@{@"title" : @"距离转换", @"image" : @"icon_cat_10", @"operateType":@(SkeletonTypeDistanceTransform), @"showSlider" : @"0"},
+                              @{@"title" : @"hilditch细化", @"image" : @"icon_cat_11", @"operateType":@(SkeletonTypeHilditch), @"showSlider" : @"0"},
+                              @{@"title" : @"Rosenfeld细化", @"image" : @"icon_cat_12", @"operateType":@(SkeletonTypeRosenfeld), @"showSlider" : @"0"},
+                              @{@"title" : @"形态学骨架", @"image" : @"icon_cat_13", @"operateType":@(SkeletonTypeMorph), @"showSlider" : @"0"}
                               ];
     [self showMenuViewWithArr:sketetonMenu];
 }
@@ -193,6 +193,7 @@
     self.menuView = [[GLMenuView alloc] initWithFrame:CGRectMake(0, ScreenHeight - 100, ScreenWidth, 100) withMenuItem:menuArr];
     self.menuView.delegate = self;
     [self.view addSubview:self.menuView];
+    [self.menuView itemSelectAtIndex:0];
 }
 
 #pragma mark -- 图像处理
@@ -275,7 +276,11 @@
             break;
         case BinaryTypeCustom:
         {
-            self.imageView.image = [self.srcImg binaryzationWithThresh:(int)value];
+            if (value == 0) {
+                 self.imageView.image = [self.srcImg binaryzation];
+            }else{
+                self.imageView.image = [self.srcImg binaryzationWithThresh:(int)value];
+            }
         }
             break;
         default:

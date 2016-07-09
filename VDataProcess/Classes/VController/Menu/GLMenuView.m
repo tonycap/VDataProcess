@@ -8,6 +8,7 @@
 
 #import "GLMenuView.h"
 
+#import "UIView+Frame.h"
 #import "ASValueTrackingSlider.h"
 #import "GLMenuItem.h"
 #import "Macro.h"
@@ -30,8 +31,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame withMenuItem:(NSArray *)menuArr{
     if (self = [super initWithFrame:frame]) {
-        _showSlider = TRUE;
-        [self refreshMenuWithSlider: self.showSlider];
+        [self contentViewInit];
         [self contentInitWithMenuArr:menuArr];
     }
     
@@ -40,21 +40,18 @@
 
 const int menuWidth = 100;
 
-- (void)refreshMenuWithSlider:(BOOL)flag{
+- (void)contentViewInit{
     sliderValue = 0;
     
     self.backgroundColor = [UIColor whiteColor];
-    if (flag) {
-        self.slider = [[ASValueTrackingSlider alloc] initWithFrame:CGRectMake(Padding20, Padding10, ScreenWidth - 2*Padding20, 20)];
-        self.slider.maximumValue = 100;
-        [self.slider setMaxFractionDigitsDisplayed:0];
-        self.slider.delegate = self;
-        self.slider.font = [UIFont fontWithName:@"GillSans-Bold" size:22];
-        self.slider.popUpViewAnimatedColors = @[[UIColor purpleColor], [UIColor redColor], [UIColor orangeColor]];
-        [self addSubview:self.slider];
-    }else{
-        [self.slider removeFromSuperview];
-    }
+    self.slider = [[ASValueTrackingSlider alloc] initWithFrame:CGRectMake(Padding20, Padding10, ScreenWidth - 2*Padding20, 20)];
+    self.slider.maximumValue = 100;
+    [self.slider setMaxFractionDigitsDisplayed:0];
+    self.slider.delegate = self;
+    self.slider.font = [UIFont fontWithName:@"GillSans-Bold" size:22];
+    self.slider.popUpViewAnimatedColors = @[[UIColor purpleColor], [UIColor redColor], [UIColor orangeColor]];
+    [self addSubview:self.slider];
+    
     
     self.menuScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.bounds) - 60, ScreenWidth, 60)];
     [self addSubview:self.menuScrollView];
@@ -83,6 +80,15 @@ const int menuWidth = 100;
     
     self.menuScrollView.contentSize = CGSizeMake(menuWidth * arr.count, CGRectGetHeight(self.menuScrollView.bounds));
     self.menuScrollView.contentOffset = CGPointZero;
+    
+}
+
+- (void)itemSelectAtIndex:(NSInteger)index{
+    if (index < 0 || (index > self.itemArr.count - 1)) {
+        index = 0;
+    }
+    self.selectItem = [self.itemArr objectAtIndex:index];
+    [self menuItemSelect:self.selectItem];
 }
 
 #pragma mark -- GLMenuItemDelegate
@@ -100,8 +106,29 @@ const int menuWidth = 100;
     self.selectItem = itemInfo;
     sliderValue = ((sliderValue != 0) ? sliderValue : 0);
     
+    self.slider.value = 3;
+    if ([itemInfo objectForKey:@"showSlider"]) {
+        [self refreshViewWithShowSlider:FALSE];
+    }else{
+        [self refreshViewWithShowSlider:TRUE];
+    }
+    
     [self updateItemInfo:itemInfo sliderValue:sliderValue];
     
+}
+
+- (void)refreshViewWithShowSlider:(BOOL)flag{
+    if (flag) {
+        self.slider.hidden = FALSE;
+        
+        self.frame = CGRectMake(self.left, ScreenHeight - 100, self.width, 100);
+        self.menuScrollView.top = CGRectGetHeight(self.bounds) - 60;
+    }else{
+        self.slider.hidden = TRUE;
+        
+        self.frame = CGRectMake(self.left, ScreenHeight - (Padding10 + 60) , self.width, Padding10 + 60);
+        self.menuScrollView.top = Padding10;
+    }
 }
 
 #pragma mark ---
