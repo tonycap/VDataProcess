@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GLArtascopeVC">
             <connections>
                 <outlet property="decaySlider" destination="MMc-o1-MoG" id="v59-U2-cGZ"/>
+                <outlet property="imageView" destination="Sam-le-c0t" id="9HN-3h-YXf"/>
                 <outlet property="rotationSlider" destination="GHl-SZ-5cz" id="NbR-Lo-Cw8"/>
                 <outlet property="sizeSlider" destination="ImH-kM-H86" id="C1K-Ez-cnk"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -76,24 +77,31 @@
                         <action selector="valueChanged:" destination="-1" eventType="valueChanged" id="DeP-fW-yQg"/>
                     </connections>
                 </slider>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sam-le-c0t">
+                    <rect key="frame" x="14" y="45" width="573" height="411"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="GHl-SZ-5cz" firstAttribute="leading" secondItem="HwS-AL-0RG" secondAttribute="trailing" constant="13" id="16A-Jp-rWr"/>
                 <constraint firstItem="ImH-kM-H86" firstAttribute="leading" secondItem="Iw6-Jg-gMq" secondAttribute="trailing" constant="13" id="1JA-gd-Roy"/>
                 <constraint firstAttribute="trailing" secondItem="GHl-SZ-5cz" secondAttribute="trailing" constant="12" id="4aP-bv-udn"/>
+                <constraint firstItem="ImH-kM-H86" firstAttribute="top" secondItem="Sam-le-c0t" secondAttribute="bottom" constant="24" id="8ja-iS-TIZ"/>
                 <constraint firstAttribute="bottom" secondItem="IhJ-k3-2Nk" secondAttribute="bottom" constant="10" id="9yR-az-chM"/>
                 <constraint firstItem="IhJ-k3-2Nk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="DKi-ik-d0V"/>
+                <constraint firstAttribute="trailing" secondItem="Sam-le-c0t" secondAttribute="trailing" constant="13" id="DkR-v3-spg"/>
                 <constraint firstAttribute="trailing" secondItem="ImH-kM-H86" secondAttribute="trailing" constant="12" id="E22-zM-lQE"/>
                 <constraint firstItem="IhJ-k3-2Nk" firstAttribute="top" secondItem="HwS-AL-0RG" secondAttribute="bottom" constant="10" id="ELi-QX-mGz"/>
                 <constraint firstItem="HwS-AL-0RG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="KWA-gR-L7b"/>
                 <constraint firstItem="MMc-o1-MoG" firstAttribute="top" secondItem="GHl-SZ-5cz" secondAttribute="bottom" constant="8" id="LVE-Nn-s2X"/>
+                <constraint firstItem="Sam-le-c0t" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="RUr-sg-sa0"/>
                 <constraint firstItem="MMc-o1-MoG" firstAttribute="leading" secondItem="IhJ-k3-2Nk" secondAttribute="trailing" constant="13" id="SLm-aP-sDT"/>
                 <constraint firstAttribute="trailing" secondItem="MMc-o1-MoG" secondAttribute="trailing" constant="12" id="d1V-BY-VtT"/>
                 <constraint firstAttribute="bottom" secondItem="MMc-o1-MoG" secondAttribute="bottom" constant="10" id="mcv-oA-LOj"/>
                 <constraint firstItem="HwS-AL-0RG" firstAttribute="top" secondItem="Iw6-Jg-gMq" secondAttribute="bottom" constant="10" id="oi3-5M-BYg"/>
                 <constraint firstItem="GHl-SZ-5cz" firstAttribute="top" secondItem="ImH-kM-H86" secondAttribute="bottom" constant="12" id="qQU-oX-bA7"/>
                 <constraint firstItem="Iw6-Jg-gMq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="swW-b7-1Nq"/>
+                <constraint firstItem="Sam-le-c0t" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="yXx-4s-0qe"/>
             </constraints>
             <point key="canvasLocation" x="441" y="338"/>
         </view>

@@ -26,6 +26,41 @@
     return YES;
 }
 
+
+- (void)showPreView
+{
+    if (_preview == nil) {
+        _preview = [[ImageAddPreView alloc] initWithFrame:CGRectMake(0, self.window.frame.size.height - 135, self.window.frame.size.width, 135)];
+        [_window addSubview:_preview];
+    }
+    [_preview setAlpha:0];
+    [UIView animateWithDuration:0.2
+                          delay:0.1
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         [_preview setAlpha:1];
+                     } completion:^(BOOL finished) {
+                         
+                     }];
+    [_preview setHidden:NO];
+}
+
+
+- (void)hiddenPreView
+{
+    [_preview setHidden:YES];
+    [_preview setAlpha:0];
+    //    [UIView animateWithDuration:0.1
+    //                          delay:0
+    //                        options:UIViewAnimationOptionCurveEaseInOut
+    //                     animations:^{
+    //                         [_preview setAlpha:0];
+    //                     } completion:^(BOOL finished) {
+    //
+    //                     }];
+    
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

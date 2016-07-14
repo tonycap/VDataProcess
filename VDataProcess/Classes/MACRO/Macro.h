@@ -15,6 +15,16 @@
 #define Padding20   20
 #define padding30   30
 
+#import "AppDelegate.h"
+#import <AssetsLibrary/AssetsLibrary.h>
+#import "UIColor+Help.h"
+#import "LoadingViewManager.h"
+
+#define D_Main_Appdelegate (AppDelegate *)[UIApplication sharedApplication].delegate
+
+
+#define D_LocalizedCardString(s) [[NSBundle mainBundle] localizedStringForKey:s value:nil table:@"CardToolLanguage"]
+
 typedef NS_ENUM(NSInteger, GrayFilterType) {
     GrayTypeDeal = 1001,  //灰度化
     GrayTypeHist = 1002,    //灰度直方图

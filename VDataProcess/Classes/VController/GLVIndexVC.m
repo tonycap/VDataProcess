@@ -13,6 +13,10 @@
 #import "GLVMainDealVC.h"
 #import "GLArtascopeVC.h"
 
+#import "MeituEditStyleViewController.h"
+#import "ZYQAssetPickerController.h"
+#import "UIColor+Help.h"
+
 #define FlagShowIntrodce    @"FlagShowIntrodce"
 //引导界面 + About界面（还没实现）
 //Page1:WelocomePage
@@ -25,7 +29,7 @@ static NSString * const sampleDescription3 = @"And then it help puts forward the
 static NSString * const sampleDescription4 = @"Choose some pictures you like to try this application. Hopy you enjoy it!";
 
 
-@interface GLVIndexVC ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate,EAIntroDelegate>
+@interface GLVIndexVC ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate, ZYQAssetPickerControllerDelegate,EAIntroDelegate>
 
 @property (nonatomic, strong) UIButton *cameraBtn;
 @property (nonatomic, strong) UIButton *albumBtn;
@@ -33,6 +37,8 @@ static NSString * const sampleDescription4 = @"Choose some pictures you like to 
 @property (nonatomic, strong) UIButton *aboutBtn;
 
 @property (strong, nonatomic) UIImagePickerController *imagePickerController;
+
+@property (nonatomic, strong) ZYQAssetPickerController *picker;
 
 @end
 
@@ -101,12 +107,64 @@ static NSString * const sampleDescription4 = @"Choose some pictures you like to 
 }
 
 - (IBAction)pintuBtnClick:(id)sender{
-    GLArtascopeVC *VC = [[GLArtascopeVC alloc] init];
-    [self.navigationController pushViewController:VC animated:TRUE];
+//    GLArtascopeVC *VC = [[GLArtascopeVC alloc] init];
+//    [self.navigationController pushViewController:VC animated:TRUE];
+    
+    [self startPicker];
 }
 
 - (IBAction)aboutBtnClick:(id)sender{
     [self showIntroWithCrossDissolve];
+}
+
+- (void)startPicker
+{
+    if (_picker == nil) {
+        _picker = [[ZYQAssetPickerController alloc] init];
+        _picker.maximumNumberOfSelection = 5;
+        _picker.assetsFilter = [ALAssetsFilter allPhotos];
+        _picker.showEmptyGroups=NO;
+        _picker.delegate = self;
+    }
+    _picker.selectionFilter = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
+        if ([[(ALAsset*)evaluatedObject valueForProperty:ALAssetPropertyType] isEqual:ALAssetTypeVideo]) {
+            NSTimeInterval duration = [[(ALAsset*)evaluatedObject valueForProperty:ALAssetPropertyDuration] doubleValue];
+            return duration >= 5;
+        } else {
+            return YES;
+        }
+    }];
+    
+    _picker.navigationBar.barTintColor = [UIColor colorWithHexString:@"#1fbba6"];
+   
+    [D_Main_Appdelegate showPreView];
+    _picker.vc =self;
+    [self presentViewController:_picker animated:YES completion:NULL];
+    [D_Main_Appdelegate preview].delegateSelectImage = self;
+    [[D_Main_Appdelegate preview] reMoveAllResource];
+    
+    
+}
+
+#pragma mark ImageAddPreViewDelegate
+- (void)startPintuAction:(ImageAddPreView *)sender
+{
+    if ([sender.imageassets count] >= 2) {
+        MeituEditStyleViewController *meituEditVC = [[MeituEditStyleViewController alloc] init];
+        meituEditVC.assets = sender.imageassets;
+        [_picker pushViewController:meituEditVC animated:YES];
+    }else if([sender.imageassets count] == 1){
+    }else{
+        UIAlertView *imageCountWarningalert = [[UIAlertView alloc] initWithTitle:nil
+                                                                         message:D_LocalizedCardString(@"card_meitu_max_image_count_less_than_two")
+                                                                        delegate:self
+                                                               cancelButtonTitle:nil
+                                                               otherButtonTitles:D_LocalizedCardString(@"card_meitu_max_image_promptDetermine"), nil];
+        [imageCountWarningalert show];
+        
+        
+    }
+    
 }
 
 #pragma mark -- UIImagePickerControllerDelegate

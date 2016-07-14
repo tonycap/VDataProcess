@@ -37,7 +37,8 @@
     CGRect imageRect;
 }
 
-@property (nonatomic, strong) UIImageView *imageView;
+//@property (nonatomic, strong) UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet ArtSlider *sizeSlider;
 @property (weak, nonatomic) IBOutlet ArtSlider *rotationSlider;
 @property (weak, nonatomic) IBOutlet ArtSlider *decaySlider;
@@ -66,13 +67,13 @@
         image = [UIImage imageNamed:@"taberu"];
     }
     
-    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth - 2*Padding20, ScreenWidth - 2*Padding20)];
-    self.imageView.center = CGPointMake(ScreenWidth/2, ScreenHeight/2);
+//    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth - 2*Padding20, ScreenWidth - 2*Padding20)];
+//    self.imageView.center = CGPointMake(ScreenWidth/2, ScreenHeight/2);
     self.imageView.image = image;
     self.imageView.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:self.imageView];
     
-    CGSize size = self.imageView.image.size;
+    CGSize size = self.imageView.frame.size;
     [filter setValue:[CIImage imageWithCGImage:image.CGImage] forKey:kCIInputImageKey];
     [filter setValue:[CIVector vectorWithX:size.width/2 Y:size.height/2] forKey:@"inputPoint"];
     

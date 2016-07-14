@@ -1,14 +1,18 @@
 {
   "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "931EFD52ECB7BCBFBC29FE37983C597B20B67BF1",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "de5b6a43-e7cd-6d42-8d87-d08badb44af7++4457" : {
 
+    }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "de5b6a43-e7cd-6d42-8d87-d08badb44af7++4457" : 0,
     "931EFD52ECB7BCBFBC29FE37983C597B20B67BF1" : 0,
     "21F39A739340B3CBC26B45BC3379B9A19B627B42" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "89ECAD68-B7E3-4391-B1F1-6F19CFE93D96",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "de5b6a43-e7cd-6d42-8d87-d08badb44af7++4457" : "VDataProcess\/VDataProcess\/Classes\/Pintu\/Utility\/LoadingViewManager\/",
     "931EFD52ECB7BCBFBC29FE37983C597B20B67BF1" : "VDataProcess\/",
     "21F39A739340B3CBC26B45BC3379B9A19B627B42" : "DImageFilter\/"
   },
@@ -25,6 +29,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tonycap\/VDataProcess.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "931EFD52ECB7BCBFBC29FE37983C597B20B67BF1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.168.81:8443\/svn\/ttlive",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "de5b6a43-e7cd-6d42-8d87-d08badb44af7++4457"
     }
   ]
 }
