@@ -75,7 +75,7 @@
     
     CGSize contentSize = [self calcContentSize];
     
-    self.contentView =  [[UIScrollView alloc] initWithFrame:CGRectMake((self.view.frame.size.width - contentSize.width)/2.0f, (self.view.frame.size.height- 33 - 44 - contentSize.height)/2.0f, contentSize.width,contentSize.height)];
+    self.contentView =  [[UIScrollView alloc] initWithFrame:CGRectMake((self.view.frame.size.width - contentSize.width)/2.0f, (self.view.frame.size.height- 33 - 64 - contentSize.height)/2.0f, contentSize.width,contentSize.height)];
     [self.view addSubview:_contentView];
     
     self.meituContentView = [[GLMeituContentView alloc] initWithFrame:CGRectMake(0,
@@ -122,8 +122,8 @@
     //CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 2*D_ToolbarWidth-iOS7AddStatusHeight);
     CGFloat size_width = self.view.frame.size.width;
     CGFloat size_height = size_width * 4 /3.0f;
-    if (size_height >= (self.view.frame.size.height - 44 -34)) {
-        size_height = self.view.frame.size.height- - 44 - 34;
+    if (size_height >= (self.view.frame.size.height - 64 -34)) {
+        size_height = self.view.frame.size.height- 64 - 34;
         size_width = size_height * 3/4.0f;
     }
     retSize.width = size_width;
@@ -189,7 +189,7 @@
 
 - (void)initBoardAndEditView
 {
-    self.boardAndEditView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 44 - 33- 25 - 30, self.view.frame.size.width, 30)];
+    self.boardAndEditView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 64 - 33- 25 - 30, self.view.frame.size.width, 30)];
     [self.boardAndEditView setBackgroundColor:[UIColor clearColor]];
     [self.view addSubview:self.boardAndEditView];
     
@@ -236,7 +236,7 @@
 
 - (void)initToolbarView
 {
-    self.bottomControlView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 44 - 33 - 50, self.view.frame.size.width, 50)];
+    self.bottomControlView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 64 - 33 - 50, self.view.frame.size.width, 50)];
     
     
     [self initStoryboardView];
@@ -247,7 +247,7 @@
     [self.bottomControlView setScrollEnabled:NO];
     [_bottomControlView setHidden:YES];
     
-    self.bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 44 - 33, self.view.frame.size.width, 33)];
+    self.bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 64 - 33, self.view.frame.size.width, 33)];
     [_bottomView setBackgroundColor:[[UIColor colorWithHexString:@"#1d1d1d"] colorWithAlphaComponent:0.9]];
     
     _storyboardButton = [[UIButton alloc] init];

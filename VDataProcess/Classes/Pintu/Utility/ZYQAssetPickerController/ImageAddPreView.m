@@ -41,7 +41,7 @@
     [_selectBeforeLab setTextColor:[UIColor colorWithHexString:@"#c9c9c9"]];
     [_selectBeforeLab setFont:[UIFont systemFontOfSize:13.0f]];
     [self addSubview: _selectBeforeLab];
-    [_selectBeforeLab setTextAlignment:UITextAlignmentLeft];
+    [_selectBeforeLab setTextAlignment:NSTextAlignmentLeft];
     [_selectBeforeLab setText:@"选择了"];
     
     _selectNumLab = [[UILabel alloc] initWithFrame:CGRectMake(2*D_Pending_Width,
@@ -49,7 +49,7 @@
                                                                 self.bounds.size.width - 100,
                                                                 20)];
     [_selectNumLab setTextColor:[UIColor colorWithHexString:@"#eb4d47"]];
-    [_selectNumLab setTextAlignment:UITextAlignmentCenter];
+    [_selectNumLab setTextAlignment:NSTextAlignmentCenter];
     
     [_selectNumLab setFont:[UIFont systemFontOfSize:13.0f]];
     [self addSubview: _selectNumLab];
@@ -60,7 +60,7 @@
     [_selectafterLab setTextColor:[UIColor colorWithHexString:@"#c9c9c9"]];
     [_selectafterLab setFont:[UIFont systemFontOfSize:13.0f]];
     [self addSubview: _selectafterLab];
-    [_selectafterLab setTextAlignment:UITextAlignmentRight];
+    [_selectafterLab setTextAlignment:NSTextAlignmentRight];
     [_selectafterLab setText:@"张照片"];
     
     _startPintuButton =  [[UIButton alloc] initWithFrame:CGRectMake(self.bounds.size.width - 108/2.0f-D_Pending_Width,
@@ -79,7 +79,7 @@
                                                                   self.bounds.size.width,
                                                                   D_ImageEditView_Height)];
     [self addSubview:_contentView];
-    [self.selectNumLab setText:[NSString stringWithFormat:@"%d",[_imageassets count]]];
+    [self.selectNumLab setText:[NSString stringWithFormat:@"%lu",(unsigned long)[_imageassets count]]];
     [self reselectNumFrame];
 }
 
@@ -88,7 +88,7 @@
 {
     if(_imageassets.count < 5){
     [_imageassets addObject:asset];
-    [self.selectNumLab setText:[NSString stringWithFormat:@"%d",[_imageassets count]]];
+    [self.selectNumLab setText:[NSString stringWithFormat:@"%lu",(unsigned long)[_imageassets count]]];
     [self reselectNumFrame];
     _contentView.contentSize = CGSizeMake([_imageassets count] *D_ImageEditView_Width, _contentView.frame.size.height);
     if ([_imageassets count]*(D_ImageEditView_Width+D_Pending_Width)+D_Pending_Width > _contentView.frame.size.width) {
@@ -172,7 +172,7 @@
     }
     _contentView.contentSize = CGSizeMake([_imageassets count]*(D_ImageEditView_Width+D_Pending_Width)+D_Pending_Width, _contentView.frame.size.height);
     
-    [self.selectNumLab setText:[NSString stringWithFormat:@"%d",[_imageassets count]]];
+    [self.selectNumLab setText:[NSString stringWithFormat:@"%lu",(unsigned long)[_imageassets count]]];
     [self reselectNumFrame];
 }
 
